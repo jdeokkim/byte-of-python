@@ -1,24 +1,24 @@
 # 첫 번째 프로그램 만들기
 
-이제 'Hello World'라는 문자열을 화면에 표시하는 파이썬 프로그램을 만들어 보면서, 프로그램의 기본 작성 방법, 저장 방법과 실행 방법을 알아보겠습니다.
+이제 'hello world'라는 문자열을 화면에 표시하는 파이썬 프로그램을 만들어 보면서, 프로그램의 기본 작성 방법, 저장 방법과 실행 방법을 알아보겠습니다.
 
 파이썬 프로그램은 파이썬 인터프리터로 실행하거나 소스 코드에서 바로 실행할 수 있습니다.
 
 ## 파이썬 인터프리터로 프로그램 실행하기
 
-Open the terminal in your operating system (as discussed previously in the [Installation](./installation.md#installation) chapter) and then open the Python prompt by typing `python3` and pressing `[enter]` key.
+Windows에서는 `명령 프롬프트`, Mac OS X나 GNU/Linux에서는 `터미널` 또는 `gnome-terminal`을 실행한 다음, `python3`을 실행하고 `[enter]` 키를 누릅니다. (이전 장 `[파이썬 설치하기](./installation.md#installation) chapter)`를 참고하세요)
 
-Once you have started Python, you should see `>>>` where you can start typing stuff. This is called the _Python interpreter prompt_.
+파이썬을 실행하면, 까만 창에 `>>>`가 보이고 `>>>` 뒤부터 입력을 할 수 있을 것입니다. 이것을 _파이썬 인터프리터_이라고 부릅니다.
 
-At the Python interpreter prompt, type:
+이제 아래의 코드를 입력하고 `[enter]` 키를 눌러 봅시다.
 
 ```python
-print("Hello World")
+print("hello world")
 ```
 
-followed by the `[enter]` key. You should see the words `Hello World` printed to the screen.
+`hello world`라는 글자가 화면에 표시되는 것을 확인할 수 있습니다.
 
-Here is an example of what you should be seeing, when using a Mac OS X computer. The details about the Python software will differ based on your computer, but the part from the prompt (i.e. from `>>>` onwards) should be the same regardless of the operating system.
+Mac OS X에서는 실행 결과가 아래와 같이 보일 것입니다. 화면에 나오는 파이썬 버전은 설치된 파이썬 버전에 따라 아래와 다르게 보일 수도 있지만, `>>>` 뒤의 부분은 동일하게 표시될 것입니다.
 
 <!-- The output should match pythonVersion variable in book.json -->
 ```python
@@ -26,19 +26,19 @@ $ python3
 Python 3.6.0 (default, Jan 12 2017, 11:26:36)
 [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.38)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> print("Hello World")
-Hello World
+>>> print("hello world")
+hello world
 ```
 
-Notice that Python gives you the output of the line immediately! What you just entered is a single Python _statement_. We use `print` to (unsurprisingly) print any value that you supply to it. Here, we are supplying the text `Hello World` and this is promptly printed to the screen.
+Notice that Python gives you the output of the line immediately! What you just entered is a single Python _statement_. We use `print` to (unsurprisingly) print any value that you supply to it. Here, we are supplying the text `hello world` and this is promptly printed to the screen.
 
 ### 파이썬 인터프리터 종료하기
 
-If you are using a GNU/Linux or OS X shell, you can exit the interpreter prompt by pressing `[ctrl + d]` or entering `exit()` (note: remember to include the parentheses, `()`) followed by the `[enter]` key.
+GNU/Linux나 OS X의 `터미널`을 사용하고 있다면, `[ctrl + d]` 키를 누르거나 `exit()`(`exit` 뒤의 `()`까지 빠짐없이 입력하세요)을 입력하고 `[enter]` 키를 눌러 파이썬 인터프리터를 종료할 수 있습니다.
 
-If you are using the Windows command prompt, press `[ctrl + z]` followed by the `[enter]` key.
+Windows의 `명령 프롬프트`에서는 `[ctrl + z]` 키를 누른 다음, `[enter]` 키를 누르면 파이썬 인터프리터가 종료됩니다.
 
-## Choosing An Editor
+## 텍스트 편집기 또는 통합 개발 환경(IDE, Integrated Development Environment) 선택하기
 
 We cannot type out our program at the interpreter prompt every time we want to run something, so we have to save them in files and can run our programs any number of times.
 
@@ -124,7 +124,7 @@ You can find more information about PyCharm in the [PyCharm Quickstart](https://
 
 ## 소스 코드로 프로그램 실행하기
 
-Now let's get back to programming. There is a tradition that whenever you learn a new programming language, the first program that you write and run is the 'Hello World' program - all it does is just say 'Hello World' when you run it. As Simon Cozens[^1] says, it is the "traditional incantation to the programming gods to help you learn the language better."
+Now let's get back to programming. There is a tradition that whenever you learn a new programming language, the first program that you write and run is the 'hello world' program - all it does is just say 'hello world' when you run it. As Simon Cozens[^1] says, it is the "traditional incantation to the programming gods to help you learn the language better."
 
 Start your choice of editor, enter the following program and save it as `hello.py`.
 
