@@ -1,14 +1,22 @@
+# _ a byte of python: translated by epsimatt (epsimatt@protonmail.com)
+
+​https://python.swaroopch.com/  
+https://epsimatt.gitbook.io/byte-of-python/​  
+
+© Swaroop C H  
+© epsimatt (epsimatt@protonmail.com) (korean translation)
+
 # A Byte of Python
 
-"A Byte of Python" is a free book on programming using the Python language. It serves as a tutorial or guide to the Python language for a beginner audience. If all you know about computers is how to save text files, then this is the book for you.
+"A Byte of Python"은 파이썬 프로그래밍의 기초를 다져줄 무료 책으로, 파이썬을 처음 배우는 사람들에게 도움이 될 것입니다. 텍스트 파일을 저장할 수 있을 정도의 컴퓨터 실력을 가지셨다면 이 책의 모든 내용을 충분히 이해하실 수 있습니다.
 
-## For Python version 3
+## 파이썬 버전 안내
 
-This book will teach you to use Python version 3. There will also be guidance for you to adapt to the older and more common Python version 2 in the book.
+이 책은 파이썬 3을 기준으로 작성되었으며, 파이썬 3보다는 오래되었지만 아직도 많이 쓰이는 파이썬 2에 관한 내용도 같이 설명해 드리도록 하겠습니다.
 
-## Who reads A Byte of Python? {#who-reads-bop}
+## 독자 리뷰 {#who-reads-bop}
 
-Here are what people are saying about the book:
+이 책의 많은 리뷰 중 일부를 골라 여기에 적어 놓았습니다.
 
 > This is the best beginner's tutorial I've ever seen! Thank you for your effort.
 > -- [Walt Michalik](mailto:wmich50@theramp.net)
@@ -244,40 +252,26 @@ This book is/was being used as instructional material in various educational ins
 - 'Basic programming at the Faculty of Social Sciences, University of Ljubljana, Slovenia' -- [Aleš Žiberna](mailto:ales.ziberna@fdv.uni-lj.si) says _"I (and my predecessor) have been using your book as the main literature for this course"_
 -  'Introduction to programming', Department of Information Sciences, University of Zadar, Croatia -- Krešimir Zauder says _"I would like to inform you that A Byte of Python is a mandatory read at my course"_
 
-## License
+## 라이선스
 
-This book is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+이 책의 라이선스는 [크리에이티브 커먼즈 4.0 BY-SA (저작자 표시-동일조건 변경 허락)](https://creativecommons.org/licenses/by-sa/4.0/)입니다.
 
-This means:
+라이선스에 따라,
 
-- You are free to Share i.e. to copy, distribute and transmit this book
-- You are free to Remix i.e. to make changes to this book (especially translations)
-- You are free to use it for commercial purposes
+- 이 저작물은 복사 및 배포가 가능하고,
+- 저작물을 변경하거나 이용해 2차 저작물을 만들 수 있으며,
+- 상업적으로 이용 가능합니다.
 
-Please note:
+단, 2차 저작물에는 원저작물과 동일한 라이선스를 적용해야 합니다. ([CC 라이선스](http://ccl.cckorea.org/about/))
 
 - Please do *not* sell electronic or printed copies of the book unless you have clearly and prominently mentioned in the description that these copies are *not* from the original author of this book.
 - Attribution *must* be shown in the introductory description and front page of the document by linking back to {{ book.officialUrl }} and clearly indicating that the original text can be fetched from this location.
 - All the code/scripts provided in this book is licensed under the [3-clause BSD License](http://www.opensource.org/licenses/bsd-license.php) unless otherwise noted.
 
-## Read Now
+## 책 구입
 
-You can read it online at {{ book.officialUrl }}
+이 책의 인쇄본은 [여기](https://swaroopch.com/buybook/)서 구입하실 수 있으며, 수익의 일부는 이 책을 계속 업데이트하고 개선하는 데에 사용됩니다.
 
-## Buy The Book
+## 다운로드
 
-A printed hardcopy of the book can be purchased at {{ book.buyBookUrl }} for your offline reading pleasure, and to support the continued development and improvement of this book.
-
-## Download
-
-Visit {{ book.downloadUrl }} for the following types of downloads:
-
-- [PDF (for desktop reading, etc.)](https://www.gitbook.com/download/pdf/book/swaroopch/byte-of-python)
-- [EPUB (for iPhone/iPad, ebook readers, etc.)](https://www.gitbook.com/download/epub/book/swaroopch/byte-of-python)
-- [Mobi (for Kindle)](https://www.gitbook.com/download/mobi/book/swaroopch/byte-of-python)
-
-Visit {{ book.sourceUrl }} for the raw content (for suggesting corrections, changes, translating, etc.)
-
-## Read the book in your native language
-
-If you are interested in reading or contributing translations of this book to other human languages, please see [Translations](./translations.md#translations).
+https://www.gitbook.com/book/swaroopch/byte-of-python/details

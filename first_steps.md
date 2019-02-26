@@ -1,10 +1,10 @@
-# First Steps
+# 첫 번째 프로그램 만들기
 
-We will now see how to run a traditional 'Hello World' program in Python. This will teach you how to write, save and run Python programs.
+이제 'Hello World'라는 문자열을 화면에 표시하는 파이썬 프로그램을 만들어 보면서, 프로그램의 기본 작성 방법, 저장 방법과 실행 방법을 알아보겠습니다.
 
-There are two ways of using Python to run your program - using the interactive interpreter prompt or using a source file. We will now see how to use both of these methods.
+파이썬 프로그램은 파이썬 인터프리터로 실행하거나 소스 코드에서 바로 실행할 수 있습니다.
 
-## Using The Interpreter Prompt
+## 파이썬 인터프리터로 프로그램 실행하기
 
 Open the terminal in your operating system (as discussed previously in the [Installation](./installation.md#installation) chapter) and then open the Python prompt by typing `python3` and pressing `[enter]` key.
 
@@ -32,7 +32,7 @@ Hello World
 
 Notice that Python gives you the output of the line immediately! What you just entered is a single Python _statement_. We use `print` to (unsurprisingly) print any value that you supply to it. Here, we are supplying the text `Hello World` and this is promptly printed to the screen.
 
-### How to Quit the Interpreter Prompt
+### 파이썬 인터프리터 종료하기
 
 If you are using a GNU/Linux or OS X shell, you can exit the interpreter prompt by pressing `[ctrl + d]` or entering `exit()` (note: remember to include the parentheses, `()`) followed by the `[enter]` key.
 
@@ -122,7 +122,7 @@ You can find more information about PyCharm in the [PyCharm Quickstart](https://
     * GNU/Linux users should get Emacs from their distribution's software repositories, e.g. Debian and Ubuntu users can install the `emacs24` package.
 2. Install [ELPY](https://github.com/jorgenschaefer/elpy/wiki)
 
-## Using A Source File
+## 소스 코드로 프로그램 실행하기
 
 Now let's get back to programming. There is a tradition that whenever you learn a new programming language, the first program that you write and run is the 'Hello World' program - all it does is just say 'Hello World' when you run it. As Simon Cozens[^1] says, it is the "traditional incantation to the programming gods to help you learn the language better."
 
@@ -169,7 +169,7 @@ In case you got an error, please type the above program _exactly_ as shown above
 
 A Python program is composed of _statements_. In our first program, we have only one statement. In this statement, we call the `print` _statement_ to which we supply the text "hello world".
 
-## Getting Help
+## 도움말 보기
 
 If you need quick information about any function or statement in Python, then you can use the built-in `help` functionality. This is very useful especially when using the interpreter prompt. For example, run `help('len')` - this displays the help for the `len` function which is used to count number of items.
 
@@ -179,11 +179,11 @@ Similarly, you can obtain information about almost anything in Python. Use `help
 
 In case you need to get help for operators like `return`, then you need to put those inside quotes such as `help('return')` so that Python doesn't get confused on what we're trying to do.
 
-## Summary
+## 정리
 
-You should now be able to write, save and run Python programs at ease.
+이번 장에서는 파이썬 프로그램의 기본 작성 방법, 저장 방법과 실행 방법을 알아보았습니다.
 
-Now that you are a Python user, let's learn some more Python concepts.
+이제 파이썬의 기초를 쌓아보도록 하겠습니다.
 
 ---
 
