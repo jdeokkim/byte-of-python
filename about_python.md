@@ -35,23 +35,19 @@ _자유 오픈 소스 소프트웨어_(FLOSS, Free/Libré and Open Source Softwa
 
 ### 강력한 휴대성
 
-Due to its open-source nature, Python has been ported to (i.e. changed to make it work on) many platforms. All your Python programs can work on any of these platforms without requiring any changes at all if you are careful enough to avoid any system-dependent features.
+오픈 소스 소프트웨어인 파이썬은 GNU/Linux, Windows, FreeBSD, Macintosh, Solaris, OS/2, Amiga, AROS, AS/400, BeOS, OS/390, z/OS, Palm OS, QNX, VMS, Psion, Acorn RISC OS, VxWorks, PlayStation, Sharp Zaurus, Windows CE와 PocketPC 등의 다양한 플랫폼에 이식되었으며, 특정 플랫폼만 지원하는 코드에 주의하면서 프로그램을 짜면 모든 플랫폼에서 원활하게 실행할 수 있습니다.
 
-파이썬은 GNU/Linux, Windows, FreeBSD, Macintosh, Solaris, OS/2, Amiga, AROS, AS/400, BeOS, OS/390, z/OS, Palm OS, QNX, VMS, Psion, Acorn RISC OS, VxWorks, PlayStation, Sharp Zaurus, Windows CE와 PocketPC 등의 다양한 운영 체제(operating system)에서 사용할 수 있습니다.
-
-[Kivy](http://kivy.org)같은 프레임워크를 사용해 컴퓨터 게임을 만들거나 iPhone, iPad나 Android 앱을 개발할 수도 있습니다.
+또한 [Kivy](http://kivy.org)같은 프레임워크를 사용해 간단한 PC 게임을 만들거나 iPhone, iPad나 Android 앱을 개발할 수도 있습니다.
 
 ### 인터프리터 언어
 
-이제 컴파일 언어와 인터프리터 언어가 무엇인지 설명을 해보겠습니다.
+C언어나 C\++같은 컴파일 언어는 프로그램을 실행하려면 먼저 소스 코드를 기계어로 된 목적 프로그램으로 번역하는 컴파일(compile) 과정을 거친 다음, 여러 개의 목적 프로그램을 묶어 실행할 수 있는 프로그램을 만드는 링킹(linking) 과정이 필요합니다.
 
-A program written in a compiled language like C or C\++ is converted from the source language i.e. C or C++ into a language that is spoken by your computer (binary code i.e. 0s and 1s) using a compiler with various flags and options. When you run the program, the linker/loader software copies the program from hard disk to memory and starts running it.
-
-Python, on the other hand, does not need compilation to binary. You just _run_ the program directly from the source code. Internally, Python converts the source code into an intermediate form called bytecodes and then translates this into the native language of your computer and then runs it. All this, actually, makes using Python much easier since you don't have to worry about compiling the program, making sure that the proper libraries are linked and loaded, etc. This also makes your Python programs much more portable, since you can just copy your Python program onto another computer and it just works!
+인터프리터 언어인 파이썬은 소스 코드가 중간 코드인 바이트코드로 변환되고 기계어로 번역된 다음 바로 실행되며, 복잡한 컴파일 과정과 링킹 과정이 없기 때문에 프로그램 개발이 쉽고 모든 플랫폼에서 실행할 수 있습니다.
 
 ### 객체 지향 프로그래밍 언어
 
-Python supports procedure-oriented programming as well as object-oriented programming. In _procedure-oriented_ languages, the program is built around procedures or functions which are nothing but reusable pieces of programs. In _object-oriented_ languages, the program is built around objects which combine data and functionality. Python has a very powerful but simplistic way of doing OOP, especially when compared to big languages like C++ or Java.
+파이썬은 절차 지향 프로그래밍과 객체 지향 프로그래밍을 둘 다 지원합니다. In _procedure-oriented_ languages, the program is built around procedures or functions which are nothing but reusable pieces of programs. In _object-oriented_ languages, the program is built around objects which combine data and functionality. Python has a very powerful but simplistic way of doing OOP, especially when compared to big languages like C++ or Java.
 
 ### 확장성
 
@@ -59,7 +55,7 @@ Python supports procedure-oriented programming as well as object-oriented progra
 
 ### 다른 프로그래밍 언어에 포함 가능
 
-파이썬 코드 일부를 C/C\++언어 프로그램에 포함하여 your program's users에게 _scripting_ capabilities를 give할 수 있습니다.
+파이썬 코드 일부를 C/C\++언어 프로그램에 포함하여 사용자들이 프로그램을 원하는 대로 수정할 수 있게 할 수도 있습니다.
 
 ### 확장 가능한 라이브러리
 
@@ -86,7 +82,7 @@ For details on differences between Python 2 and Python 3, see:
 
 ## 파이썬에 대한 해커들의 생각
 
-다음은 에릭 레이먼드(Eric S. Raymond, 1957~)같이 영향력 있는 해커들이 말하는 파이썬의 장점에 대해 적은 글입니다.
+다음은 에릭 레이먼드(Eric S. Raymond, 1957~) 등의 영향력 있는 해커들이 말하는 파이썬의 장점에 대해 적은 글입니다.
 
 - _Eric S. Raymond_ is the author of "The Cathedral and the Bazaar" and is also the person who coined the term _Open Source_. He says that [Python has become his favorite programming language](http://www.python.org/about/success/esr/). This article was the real inspiration for my first brush with Python.
 - _Bruce Eckel_ is the author of the famous 'Thinking in Java' and 'Thinking in C++' books. He says that no language has made him more productive than Python. He says that Python is perhaps the only language that focuses on making things easier for the programmer. Read the [complete interview](http://www.artima.com/intv/aboutme.html) for more details.

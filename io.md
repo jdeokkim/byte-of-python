@@ -1,4 +1,4 @@
-# Input and Output {#io}
+# 입력과 출력 {#io}
 
 There will be situations where your program has to interact with the user. For example, you would want to take input from the user and then print some results back. We can achieve this using the `input()` function and `print` function respectively.
 
