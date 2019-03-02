@@ -59,9 +59,9 @@ C언어나 C\++같은 컴파일 언어는 프로그램을 실행하려면 먼저
 
 ### 확장 가능한 라이브러리
 
-The Python Standard Library is huge indeed. It can help you do various things involving regular expressions,documentation generation, unit testing, threading, databases, web browsers, CGI, FTP, email, XML, XML-RPC, HTML, WAV files, cryptography, GUI (graphical user interfaces), and other system-dependent stuff. Remember, all this is always available wherever Python is installed. This is called the _Batteries Included_ philosophy of Python.
+파이썬 표준 라이브러리에는 정규 표현식을 쉽게 사용할 수 있게 해주는 패키지, 프로그램 매뉴얼 (documentation) 생성을 도와주는 패키지, 단위 테스트 (unit testing)를 쉽게 할 수 있게 해주는 패키지, 쓰레드 (thread) 관련 패키지, 데이터베이스를 쉽게 관리할 수 있게 해주는 패키지, 웹 브라우저를 실행할 수 있게 하는 패키지, CGI, FTP, XML, XML-RPC, HTML 등과 관련된 패키지, 암호화 알고리즘 관련 패키지, GUI (graphical user interfaces) 프로그래밍 패키지 등의 다양한 패키지가 포함되어 있습니다. 파이썬을 설치하면 파이썬 표준 라이브러리도 같이 설치됩니다.
 
-Besides the standard library, there are various other high-quality libraries which you can find at the [Python Package Index](http://pypi.python.org/pypi).
+또한 [파이썬 패키지 검색 및 관리 사이트 (Python Package Index)](http://pypi.python.org/pypi)에서 표준 라이브러리에 포함된 패키지 이외의 더 많은 패키지를 찾아보고 설치할 수 있습니다.
 
 ### 정리
 
@@ -69,11 +69,9 @@ Besides the standard library, there are various other high-quality libraries whi
 
 ## 파이썬 2와 파이썬 3의 비교
 
-파이썬 3의 이전 버전인 '파이썬 2'와 '파이썬 3'의 차이를 알고 싶으시다면 이 부분을 읽어주세요. 이 책은 파이썬 3을 위한 책입니다.
+파이썬 3의 이전 버전인 '파이썬 2'와 '파이썬 3'가 어떻게 차이가 나는지 확인하려면 이 부분을 읽어주세요. 이 책은 파이썬 3을 기준으로 쓰인 책입니다. 일단 두 버전 중 하나를 제대로 이해하고 배워두면, 남은 하나와의 차이를 쉽게 파악할 수 있을 것입니다.
 
-Remember that once you have properly understood and learn to use one version, you can easily learn the differences and use the other one. The hard part is learning programming and understanding the basics of Python language itself. That is our goal in this book, and once you have achieved that goal, you can easily use Python 2 or Python 3 depending on your situation.
-
-For details on differences between Python 2 and Python 3, see:
+파이썬 2와 파이썬 3이 어떻게 다른지 확인하고 싶으시다면 아래의 기사를 읽어보는 것이 좋습니다.
 
 - [The future of Python 2](http://lwn.net/Articles/547191/)
 - [Porting Python 2 Code to Python 3](https://docs.python.org/3/howto/pyporting.html)
@@ -82,7 +80,7 @@ For details on differences between Python 2 and Python 3, see:
 
 ## 파이썬에 대한 해커들의 생각
 
-다음은 에릭 레이먼드(Eric S. Raymond, 1957~) 등의 영향력 있는 해커들이 말하는 파이썬의 장점에 대해 적은 글입니다.
+다음은 에릭 레이먼드(Eric S. Raymond, 1957~) 등의 영향력 있는 해커들이 파이썬에 대해 어떻게 생각하는지를 적은 글입니다.
 
 - _Eric S. Raymond_ is the author of "The Cathedral and the Bazaar" and is also the person who coined the term _Open Source_. He says that [Python has become his favorite programming language](http://www.python.org/about/success/esr/). This article was the real inspiration for my first brush with Python.
 - _Bruce Eckel_ is the author of the famous 'Thinking in Java' and 'Thinking in C++' books. He says that no language has made him more productive than Python. He says that Python is perhaps the only language that focuses on making things easier for the programmer. Read the [complete interview](http://www.artima.com/intv/aboutme.html) for more details.

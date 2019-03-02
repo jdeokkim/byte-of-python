@@ -28,7 +28,7 @@ Windows Vista 이하의 버전을 사용하고 계시다면, Windows Vista 이�
 
 ### 명령 프롬프트 {#dos-prompt}
 
-If you want to be able to use Python from the Windows command line i.e. the DOS prompt, then you need to set the PATH variable appropriately.
+`명령 프롬프트` 등의 Windows CLI (Command-Line Interface) 환경에서 파이썬을 사용하고자 한다면, `PATH` 환경 변수를 제대로 설정해야 합니다.
 
 For Windows 2000, XP, 2003 , click on `Control Panel` -> `System` -> `Advanced` -> `Environment Variables`. Click on the variable named `PATH` in the _System Variables_ section, then select `Edit` and add `;C:\Python35` (please verify that this folder exists, it will be different for newer versions of Python) to the end of what is already there. Of course, use the appropriate directory name.
 
