@@ -41,17 +41,17 @@ _자유 오픈 소스 소프트웨어_(FLOSS, Free/Libré and Open Source Softwa
 
 ### 인터프리터 언어
 
-C언어나 C\++같은 컴파일 언어는 프로그램을 실행하려면 먼저 소스 코드를 기계어로 된 목적 프로그램으로 번역하는 컴파일(compile) 과정을 거친 다음, 여러 개의 목적 프로그램을 묶어 실행할 수 있는 프로그램을 만드는 링킹(linking) 과정이 필요합니다.
+C언어나 C\++같은 컴파일 언어는 프로그램을 실행하려면 먼저 소스 코드를 기계어로 된 목적 프로그램으로 번역하는 컴파일 (compile) 과정을 거친 다음, 여러 개의 목적 프로그램을 묶어 실행할 수 있는 프로그램을 만드는 링킹 (linking) 과정이 필요합니다.
 
 인터프리터 언어인 파이썬은 소스 코드가 중간 코드인 바이트코드로 변환되고 기계어로 번역된 다음 바로 실행되며, 복잡한 컴파일 과정과 링킹 과정이 없기 때문에 프로그램 개발이 쉽고 모든 플랫폼에서 실행할 수 있습니다.
 
 ### 객체 지향 프로그래밍 언어
 
-파이썬은 절차 지향 프로그래밍과 객체 지향 프로그래밍을 둘 다 지원합니다. In _procedure-oriented_ languages, the program is built around procedures or functions which are nothing but reusable pieces of programs. In _object-oriented_ languages, the program is built around objects which combine data and functionality. Python has a very powerful but simplistic way of doing OOP, especially when compared to big languages like C++ or Java.
+파이썬은 절차 지향 프로그래밍과 객체 지향 프로그래밍을 둘 다 지원합니다. 절차 지향 프로그래밍 언어에서 프로그램은 다시 사용할 수 있는 프로그램의 일부인 함수 (functions)와 여러가지 절차 (procedure)로 이루어져 있는 반면에, 객체 지향 프로그래밍 언어에서 프로그램은 데이터와 기능을 합친 객체 (objects)로 이루어져 있습니다. 파이썬은 C++나 Java같은 프로그래밍 언어에 비해 간결하지만 강력한 객체 지향 프로그래밍 방법을 지원합니다.
 
 ### 확장성
 
-파이썬 프로그램 중 공개하고 싶지 않은 알고리즘이나 빠른 계산이 요구되는 부분이 있다면, 그 부분만 C/C\++언어로 구현한 다음 파이썬에서 쓸 수 있습니다.
+파이썬 프로그램 중 공개하고 싶지 않은 알고리즘이 있거나 계산을 빠르게 해야 되는 부분이 있다면, 그 부분만 C/C\++언어로 구현한 다음 파이썬에서 쓸 수 있습니다.
 
 ### 다른 프로그래밍 언어에 포함 가능
 
@@ -69,13 +69,13 @@ C언어나 C\++같은 컴파일 언어는 프로그램을 실행하려면 먼저
 
 ## 파이썬 2와 파이썬 3의 비교
 
-파이썬 3의 이전 버전인 '파이썬 2'와 '파이썬 3'가 어떻게 차이가 나는지 확인하려면 이 부분을 읽어주세요. 이 책은 파이썬 3을 기준으로 쓰인 책입니다. 일단 두 버전 중 하나를 제대로 이해하고 배워두면, 남은 하나와의 차이를 쉽게 파악할 수 있을 것입니다.
+파이썬 3의 이전 버전인 '파이썬 2'와 '파이썬 3'가 어떻게 차이가 나는지 확인하려면 이 부분을 읽어주세요. 이 책은 파이썬 3을 기준으로 쓰인 책입니다. 일단 두 버전 중 하나를 제대로 이해하고 배워두면, 나머지 하나와의 차이를 쉽게 파악할 수 있을 것입니다.
 
 파이썬 2와 파이썬 3이 어떻게 다른지 확인하고 싶으시다면 아래의 기사를 읽어보는 것이 좋습니다.
 
-- [The future of Python 2](http://lwn.net/Articles/547191/)
-- [Porting Python 2 Code to Python 3](https://docs.python.org/3/howto/pyporting.html)
-- [Writing code that runs under both Python2 and 3](https://wiki.python.org/moin/PortingToPy3k/BilingualQuickRef)
+- [파이썬 2의 미래](http://lwn.net/Articles/547191/)
+- [파이썬 2 코드를 파이썬 3로 이식하는 법](https://docs.python.org/3/howto/pyporting.html)
+- [파이썬 2와 파이썬 3, 두 버전 모두에서 실행 가능한 프로그램 만들기](https://wiki.python.org/moin/PortingToPy3k/BilingualQuickRef)
 - [Supporting Python 3: An in-depth guide](http://python3porting.com)
 
 ## 파이썬에 대한 해커들의 생각
