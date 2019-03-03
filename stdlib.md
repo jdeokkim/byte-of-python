@@ -8,9 +8,7 @@
 
 ## `sys` module {#sys}
 
-The `sys` module contains system-specific functionality. We have already seen that the `sys.argv` list contains the command-line arguments.
-
-Suppose we want to check the version of the Python software being used, the `sys` module gives us that information.
+`sys` 모듈은 파이썬 버전 정보 등의 다양한 시스템 관련 정보를 제공합니다. We have already seen that the `sys.argv` list contains the command-line arguments.
 
 <!-- The output should match pythonVersion variable in book.json -->
 ```python
@@ -21,7 +19,7 @@ sys.version_info(major=3, minor=6, micro=0, releaselevel='final', serial=0)
 True
 ```
 
-**How It Works**
+**코드 이해하기**
 
 The `sys` module has a `version_info` tuple that gives us the version information. The first entry is the major version. We can pull out this information to use it.
 
@@ -58,8 +56,8 @@ There is much more to be explored in the standard library such as [debugging](ht
 
 The best way to further explore the standard library is to read Doug Hellmann's excellent [Python Module of the Week](http://pymotw.com/2/contents.html) series (also available as a [book](http://amzn.com/0321767349)) and reading the [Python documentation](http://docs.python.org/3/).
 
-## Summary
+## 정리
 
-We have explored some of the functionality of many modules in the Python Standard Library. It is highly recommended to browse through the [Python Standard Library documentation](http://docs.python.org/3/library/) to get an idea of all the modules that are available.
+이번 장에서는 파이썬 표준 라이브러리에 포함된 몇 가지 모듈에 대해 알아보았습니다. 표준 라이브러리에 포함된 모듈에 대해 더 자세한 정보를 확인하고 싶으시다면 [파이썬 표준 라이브러리 매뉴얼 (documentation)](http://docs.python.org/3/library/)를 참고하시기 바랍니다.
 
-Next, we will cover various aspects of Python that will make our tour of Python more _complete_.
+다음 장에서는 파이썬의 여러가지 유용한 기능에 대해 알아보도록 하겠습니다.

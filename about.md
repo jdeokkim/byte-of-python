@@ -32,4 +32,4 @@ For the tenth draft, I switched to writing in Markdown + [GitBook](https://www.g
 
 ## About the Author
 
-See {{ book.authorUrl }}
+See https://www.swaroopch.com/about/
