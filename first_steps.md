@@ -58,35 +58,29 @@ To reiterate, please choose a proper editor - it can make writing Python program
 
 ## PyCharm {#pycharm}
 
-[PyCharm Educational Edition](https://www.jetbrains.com/pycharm-edu/) is a free editor which you can use for writing Python programs.
+[PyCharm 커뮤니티 에디션](https://www.jetbrains.com/pycharm/download/#section=windows)은 파이썬 프로그램을 편리하게 작성할 수 있게 도와주는 IDE로, 간단한 사용법은 다음과 같습니다.
 
-When you open PyCharm, you'll see this, click on `Create New Project`:
+먼저, PyCharm을 실행하고, `Create New Project`를 클릭하세요.
 
-![When you open PyCharm](./img/pycharm_open.png)
+![PyCharm에서 새 프로젝트 만들기](./img/pycharm_create_new_project.png)
 
-Select `Pure Python`:
+여기서 `Pure Python`을 선택한 다음, `untitled`라고 되어있는 부분을 `helloworld`로 바꾸고 `Create` 버튼을 클릭하세요.
 
-![PyCharm New Project](./img/pycharm_create_new_project.png)
+![PyCharm 프로젝트 이름 설정](./img/pycharm_create_new_project_pure_python.png)
 
-Change `untitled` to `helloworld` as the location of the project, you should see details similar to this:
+이제 `helloworld` 폴더를 오른쪽 클릭한 다음, `New` -> `Python File`을 선택하세요.
 
-![PyCharm project details](./img/pycharm_create_new_project_pure_python.png)
+![프로젝트에 새 파이썬 파일 추가하기](./img/pycharm_new_python_file.png)
 
-Click the `Create` button.
+새 파이썬 파일 이름을 지정하라는 창이 뜨면 `hello`를 입력하세요.
 
-Right-click on the `helloworld` in the sidebar and select `New` -> `Python File`:
+![PyCharm에서 파이썬 파일 이름 지정하기](./img/pycharm_new_file_input.png)
 
-![PyCharm -> New -> Python File](./img/pycharm_new_python_file.png)
-
-You will be asked to type the name, type `hello`:
-
-![PyCharm New File dialog box](./img/pycharm_new_file_input.png)
-
-You can now see a file opened for you:
+새 파이썬 파일이 만들어진 것을 확인할 수 있습니다.
 
 ![PyCharm hello.py file](./img/pycharm_hello_open.png)
 
-Delete the lines that are already present, and now type the following:
+이제 아래의 코드를 그대로 입력하세요.
 
 <!-- TODO: Update screenshots for Python 3 -->
 
@@ -97,7 +91,7 @@ Now right-click on what you typed (without selecting the text), and click on `Ru
 
 ![PyCharm Run 'hello'](./img/pycharm_run.png)
 
-You should now see the output (what it prints) of your program:
+아래와 같이 프로그램이 `hello world`를 출력하는 것을 확인할 수 있습니다.
 
 ![PyCharm output](./img/pycharm_output.png)
 
