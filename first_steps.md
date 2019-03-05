@@ -68,19 +68,19 @@ To reiterate, please choose a proper editor - it can make writing Python program
 
 ![PyCharm 프로젝트 이름 설정](./img/pycharm_create_new_project_pure_python.png)
 
-`helloworld` 폴더를 오른쪽 클릭한 다음, `New` -> `Python File`을 선택하세요.
+이제 `helloworld` 폴더를 오른쪽 클릭한 다음, `New` -> `Python File`을 선택하세요.
 
 ![프로젝트에 새 파이썬 파일 추가하기](./img/pycharm_new_python_file.png)
 
-파일 이름을 입력하라는 내용의 창이 뜨면 `hello`를 입력하세요.
+새 파이썬 파일 이름을 지정하라는 창이 뜨면 `hello`를 입력하세요.
 
-![PyCharm New File dialog box](./img/pycharm_new_file_input.png)
+![PyCharm에서 파이썬 파일 이름 지정하기](./img/pycharm_new_file_input.png)
 
-You can now see a file opened for you:
+새 파이썬 파일이 만들어진 것을 확인할 수 있습니다.
 
 ![PyCharm hello.py file](./img/pycharm_hello_open.png)
 
-Delete the lines that are already present, and now type the following:
+이제 아래의 코드를 그대로 입력하세요.
 
 <!-- TODO: Update screenshots for Python 3 -->
 
@@ -91,7 +91,7 @@ Now right-click on what you typed (without selecting the text), and click on `Ru
 
 ![PyCharm Run 'hello'](./img/pycharm_run.png)
 
-You should now see the output (what it prints) of your program:
+아래와 같이 프로그램이 `hello world`를 출력하는 것을 확인할 수 있습니다.
 
 ![PyCharm output](./img/pycharm_output.png)
 
