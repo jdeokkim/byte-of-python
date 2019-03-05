@@ -64,11 +64,9 @@ To reiterate, please choose a proper editor - it can make writing Python program
 
 ![PyCharm에서 새 프로젝트 만들기](./img/pycharm_create_new_project.png)
 
-여기서 `Pure Python`을 선택하세요.
+여기서 `Pure Python`을 선택한 다음, `untitled`라고 되어있는 부분을 `helloworld`로 바꾸고 `Create` 버튼을 클릭하세요.
 
 ![PyCharm 프로젝트 이름 설정](./img/pycharm_create_new_project_pure_python.png)
-
-`untitled`라고 되어있는 부분을 `helloworld`로 바꾸고, `Create` 버튼을 클릭하세요.
 
 `helloworld` 폴더를 오른쪽 클릭한 다음, `New` -> `Python File`을 선택하세요.
 
