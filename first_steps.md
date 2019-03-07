@@ -56,7 +56,7 @@ In case you are willing to take the time to learn Vim or Emacs, then I highly re
 
 To reiterate, please choose a proper editor - it can make writing Python programs more fun and easy.
 
-## PyCharm {#pycharm}
+## PyCharm으로 파이썬 프로그램 만들기 {#pycharm}
 
 [PyCharm 커뮤니티 에디션](https://www.jetbrains.com/pycharm/download/#section=windows)은 파이썬 프로그램을 편리하게 작성할 수 있게 도와주는 IDE로, 간단한 사용법은 다음과 같습니다.
 
@@ -87,7 +87,7 @@ To reiterate, please choose a proper editor - it can make writing Python program
 ```python
 print("hello world")
 ```
-Now right-click on what you typed (without selecting the text), and click on `Run 'hello'`.
+입력한 코드를 전체 선택한 다음, 오른쪽 클릭 메뉴에서 `Run 'hello'`를 클릭하세요.
 
 ![PyCharm Run 'hello'](./img/pycharm_run.png)
 
@@ -99,16 +99,16 @@ Phew! That was quite a few steps to get started, but henceforth, every time we a
 
 You can find more information about PyCharm in the [PyCharm Quickstart](https://www.jetbrains.com/pycharm-educational/quickstart/) page.
 
-## Vim
+## Vim 설치하기
 
-1. Install [Vim](http://www.vim.org)
-    * Mac OS X users should install `macvim` package via [HomeBrew](http://brew.sh/)
+1. 먼저 [Vim](http://www.vim.org)을 설치하세요.
+    * Mac OS X를 사용하고 계시다면 [HomeBrew](http://brew.sh/)로 `macvim`을 설치해야 합니다.
     * Windows users should download the "self-installing executable" from [Vim website](http://www.vim.org/download.php)
     * GNU/Linux users should get Vim from their distribution's software repositories, e.g. Debian and Ubuntu users can install the `vim` package.
 2. Install [jedi-vim](https://github.com/davidhalter/jedi-vim) plugin for autocompletion.
 3. Install corresponding `jedi` python package : `pip install -U jedi`
 
-## Emacs
+## Emacs 설치하기
 
 1. Install [Emacs 24+](http://www.gnu.org/software/emacs/).
     * Mac OS X users should get Emacs from http://emacsformacosx.com
