@@ -87,7 +87,7 @@ To reiterate, please choose a proper editor - it can make writing Python program
 ```python
 print("hello world")
 ```
-Now right-click on what you typed (without selecting the text), and click on `Run 'hello'`.
+입력한 코드를 전체 선택한 다음, 오른쪽 클릭 메뉴에서 `Run 'hello'`를 클릭하세요.
 
 ![PyCharm Run 'hello'](./img/pycharm_run.png)
 
