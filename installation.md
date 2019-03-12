@@ -30,7 +30,7 @@ Windows Vista 이하의 버전을 사용하고 계시다면, Windows Vista 이�
 
 `명령 프롬프트` 등의 Windows CLI (Command-Line Interface) 환경에서 파이썬을 사용하고자 한다면, `PATH` 환경 변수를 제대로 설정해야 합니다.
 
-For Windows 2000, XP, 2003 , click on `Control Panel` -> `System` -> `Advanced` -> `Environment Variables`. Click on the variable named `PATH` in the _System Variables_ section, then select `Edit` and add `;C:\Python35` (please verify that this folder exists, it will be different for newer versions of Python) to the end of what is already there. Of course, use the appropriate directory name.
+For Windows 2000, XP, 2003, click on `Control Panel` -> `System` -> `Advanced` -> `Environment Variables`. Click on the variable named `PATH` in the _System Variables_ section, then select `Edit` and add `;C:\Python35` (please verify that this folder exists, it will be different for newer versions of Python) to the end of what is already there. Of course, use the appropriate directory name.
 
 <!-- The directory should match pythonVersion variable in book.json -->
 For older versions of Windows, open the file `C:\AUTOEXEC.BAT` and add the line `PATH=%PATH%;C:\Python35` and restart the system. For Windows NT, use the `AUTOEXEC.NT` file.
@@ -55,7 +55,6 @@ For Windows 7 and 8:
 For Windows 10:
 
 Windows Start Menu > `Settings` > `About` > `System Info` (this is all the way over to the right) > `Advanced System Settings` > `Environment Variables` (this is towards the bottom) > (then highlight `Path` variable and click `Edit`) > `New` > (type in whatever your python location is.  For example, `C:\Python35\`)
-
 
 ### Windows에서 파이썬 실행하기
 
