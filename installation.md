@@ -24,37 +24,24 @@ Windows Vista 이하의 버전을 사용하고 계시다면, Windows Vista 이�
 
 `Add Python 3.7 PATH`나 `Add Python to environment variables` 옵션을 체크하고 설치했는데 파이썬 설치 경로가 제대로 설정되지 않았다면, 바로 밑의 `명령 프롬프트`에 있는 내용을 차근차근 따라하도록 합니다. 설치 경로가 제대로 설정되었다면 이 페이지 아래로 내려가 `Windows에서 파이썬 실행하기`의 내용을 읽어보세요.
 
-참고: Docker를 많이 사용해보셨다면 [Docker용 Python 이미지](https://hub.docker.com/_/python/)와 [Windows에서 Docker를 사용하는 방법](https://docs.docker.com/windows/)을 확인해 보세요.
+참고: Docker를 많이 사용해보셨다면 [Docker용 파이썬 이미지](https://hub.docker.com/_/python/)와 [Windows에서 Docker를 사용하는 방법](https://docs.docker.com/windows/)을 확인해 보세요.
 
 ### 명령 프롬프트 {#dos-prompt}
 
 `명령 프롬프트` 등의 Windows CLI (Command-Line Interface) 환경에서 파이썬을 사용하고자 한다면, `PATH` 환경 변수를 제대로 설정해야 합니다.
 
-For Windows 2000, XP, 2003, click on `Control Panel` -> `System` -> `Advanced` -> `Environment Variables`. Click on the variable named `PATH` in the _System Variables_ section, then select `Edit` and add `;C:\Python35` (please verify that this folder exists, it will be different for newer versions of Python) to the end of what is already there. Of course, use the appropriate directory name.
+Windows 7과 8.1을 사용하고 계시다면 아래의 과정을 그대로 따라해주세요.
 
-<!-- The directory should match pythonVersion variable in book.json -->
-For older versions of Windows, open the file `C:\AUTOEXEC.BAT` and add the line `PATH=%PATH%;C:\Python35` and restart the system. For Windows NT, use the `AUTOEXEC.NT` file.
+- Windows 7에서는 `시작 버튼`을 왼쪽 클릭하고 Windows 8.1에서는 `시작 버튼`을 오른쪽 클릭한 다음, `제어판 -> 시스템`에 들어가세요. 왼쪽에 있는 `고급 시스템 설정` 버튼을 클릭한 다음, `고급` 탭으로 들어가세요. 그 다음 탭의 아래에 있는 `환경 변수`를 클릭하고, `시스템 변수` 목록에 있는 `PATH` 환경 변수를 찾아 `편집`을 클릭하세요.
 
-For Windows Vista:
+![Windows 8.1에서 환경 변수 설정하기](./img/python372_setting_up_environment_variables.png)
 
-- Click Start and choose `Control Panel`
-- Click System, on the right you'll see "View basic information about your computer"
-- On the left is a list of tasks, the last of which is `Advanced system settings`. Click that.
-- The `Advanced` tab of the `System Properties` dialog box is shown. Click the `Environment Variables` button on the bottom right.
-- In the lower box titled `System Variables` scroll down to Path and click the `Edit` button.
-- Change your path as need be.
-- Restart your system. Vista didn't pick up the system path environment variable change until I restarted.
+- `변수 값`의 맨 오른쪽에 `;C:\Python37`를 추가해주세요. 파이썬 버전에 따라 폴더 이름은 조금씩 다를 수 있습니다.
+- `확인` 버튼을 클릭하여 환경 변수 설정을 저장하고, 명령 프롬프트를 다시 실행해주세요.
 
-For Windows 7 and 8:
+Windows 10을 사용하고 계시다면 아래의 과정을 그대로 따라해주세요.
 
-- Right click on Computer from your desktop and select `Properties` or click `Start` and choose `Control Panel` -> `System and Security` -> `System`. Click on `Advanced system settings` on the left and then click on the `Advanced` tab. At the bottom click on `Environment Variables` and under `System variables`, look for the `PATH` variable, select and then press `Edit`.
-- Go to the end of the line under Variable value and append `;C:\Python35` (please verify that this folder exists, it will be different for newer versions of Python) to the end of what is already there. Of course, use the appropriate folder name.
-- If the value was `%SystemRoot%\system32;` It will now become `%SystemRoot%\system32;C:\Python36` <!-- The directory should match pythonVersion variable in book.json -->
-- Click `OK` and you are done. No restart is required, however you may have to close and reopen the command line.
-
-For Windows 10:
-
-Windows Start Menu > `Settings` > `About` > `System Info` (this is all the way over to the right) > `Advanced System Settings` > `Environment Variables` (this is towards the bottom) > (then highlight `Path` variable and click `Edit`) > `New` > (type in whatever your python location is.  For example, `C:\Python35\`)
+- Windows Start Menu > `Settings` > `About` > `System Info` (this is all the way over to the right) > `Advanced System Settings` > `Environment Variables` (this is towards the bottom) > (then highlight `Path` variable and click `Edit`) > `New` > (type in whatever your python location is.  For example, `C:\Python35\`)
 
 ### Windows에서 파이썬 실행하기
 
