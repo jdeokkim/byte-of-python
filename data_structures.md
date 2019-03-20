@@ -1,8 +1,8 @@
 # Data Structures {#data-structures}
 
-Data structures are basically just that - they are *structures* which can hold some *data* together. In other words, they are used to store a collection of related data.
+자료 구조는 말 그대로 *자료*를 담을 수 있는 *구조*를 가진 것을 뜻하며, 비슷한 성격의 데이터 여러 개를 저장할 때 주로 사용됩니다.
 
-There are four built-in data structures in Python - _list, tuple, dictionary and set_. We will see how to use each of them and how they make life easier for us.
+파이썬은 _list, tuple, dictionary와 set_, 이 4가지의 자료 구조를 기본으로 제공하는데, 이번 장에서는 자료 구조가 실제로 어떻게 사용되는지 알아보도록 하겠습니다.
 
 ## List
 

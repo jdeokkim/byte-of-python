@@ -74,11 +74,11 @@ To reiterate, please choose a proper editor - it can make writing Python program
 
 새 파이썬 파일 이름을 지정하라는 창이 뜨면 `hello`를 입력하세요.
 
-![PyCharm에서 파이썬 파일 이름 지정하기](./img/pycharm_new_file_input.png)
+![파일 이름 지정하기](./img/pycharm_new_file_input.png)
 
 새 파이썬 파일이 만들어진 것을 확인할 수 있습니다.
 
-![PyCharm hello.py file](./img/pycharm_hello_open.png)
+![새 파이썬 파일 만들기](./img/pycharm_hello_open.png)
 
 이제 아래의 코드를 그대로 입력하세요.
 
@@ -89,11 +89,11 @@ print("hello world")
 ```
 입력한 코드를 전체 선택한 다음, 오른쪽 클릭 메뉴에서 `Run 'hello'`를 클릭하세요.
 
-![PyCharm Run 'hello'](./img/pycharm_run.png)
+![Run 'hello'를 클릭해 프로그램 실행하기](./img/pycharm_run.png)
 
 아래와 같이 프로그램이 `hello world`를 출력하는 것을 확인할 수 있습니다.
 
-![PyCharm output](./img/pycharm_output.png)
+![`hello world` 출력](./img/pycharm_output.png)
 
 Phew! That was quite a few steps to get started, but henceforth, every time we ask you to create a new file, remember to just right-click on `helloworld` on the left -> `New` -> `Python File` and continue the same steps to type and run as shown above.
 

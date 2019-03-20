@@ -238,7 +238,7 @@ The book is even used by NASA! It is used in their [Jet Propulsion Laboratory](h
 
 ## Academic Courses
 
-This book is/was being used as instructional material in various educational institutions:
+이 책은 여러 대학교와 온라인 강의 사이트에서 파이썬 교재로 쓰이고 있습니다.
 
 - 'Principles of Programming Languages' course at [Vrije Universiteit, Amsterdam](http://www.few.vu.nl/~nsilvis/PPL/2007/index.html)
 - 'Basic Concepts of Computing' course at [University of California, Davis](http://www.cs.ucdavis.edu/courses/exp_course_desc/10.html)

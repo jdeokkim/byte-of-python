@@ -1,10 +1,10 @@
-# Operators and Expressions {#op-exp}
+# 연산자와 수식 {#op-exp}
 
 Most statements (logical lines) that you write will contain _expressions_. A simple example of an expression is `2 + 3`. An expression can be broken down into operators and operands.
 
 _Operators_ are functionality that do something and can be represented by symbols such as `+` or by special keywords. Operators require some data to operate on and such data is called _operands_. In this case, `2` and `3` are the operands.
 
-## Operators
+## 연산자
 
 We will briefly take a look at the operators and their usage.
 
@@ -172,7 +172,7 @@ There is an additional advantage to using parentheses - it helps us to change th
 
 Operators are usually associated from left to right. This means that operators with the same precedence are evaluated in a left to right manner. For example, `2 + 3 + 4` is evaluated as `(2 + 3) + 4`.
 
-## Expressions
+## 수식
 
 Example (save as `expression.py`):
 
@@ -199,6 +199,6 @@ The length and breadth of the rectangle are stored in variables by the same name
 
 Also, notice how Python _pretty-prints_ the output. Even though we have not specified a space between `'Area is'` and the variable `area`, Python puts it for us so that we get a clean nice output and the program is much more readable this way (since we don't need to worry about spacing in the strings we use for output). This is an example of how Python makes life easy for the programmer.
 
-## Summary
+## 요약
 
-We have seen how to use operators, operands and expressions - these are the basic building blocks of any program. Next, we will see how to make use of these in our programs using statements.
+이번 장에서는 프로그램을 만들 때 꼭 필요한 연산자, 피연산자와 수식에 대해 알아보았습니다. Next, we will see how to make use of these in our programs using statements.
