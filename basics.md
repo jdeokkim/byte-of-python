@@ -45,13 +45,13 @@ print('hello world')
 
 > **숙련된 프로그래머라면 참고하세요**
 > 
-> 파이썬 3에서 `long` 타입은 존재하지 않으며, `int` 타입에 모든 크기의 정수를 저장할 수 있습니다.
+> 파이썬 3에서 `long` 자료형은 존재하지 않으며, `int` 자료형에 모든 크기의 정수를 저장할 수 있습니다.
 
 ## 문자열
 
 문자열은 단어나 문장처럼 여러 개의 문자가 모인 것을 말합니다.
 
-문자열은 파이썬 프로그래머라면 반드시 알아두어야 하는 부분이므로, 다음 내용을 잘 기억해두도록 합시다.
+문자열은 파이썬 프로그래머라면 반드시 알아두어야 하는 부분이므로, 아래의 내용을 잘 기억해두도록 합시다.
 
 ### 따옴표
 
@@ -67,21 +67,20 @@ He said "Bond, James Bond."
 '''
 ```
 
-### 문자열은 절대 수정할 수 없다
-
-문자열은 한번 만들면 절대로 다시 수정할 수 없습니다. Although this might seem like
+### 문자열의 특성
+문자열은 한번 만들면 절대로 다시 변경할 수 없습니다. Although this might seem like
 a bad thing, it really isn't. We will see why this is not a limitation in the various programs that
 we see later on.
 
 > **C/C++ 프로그래머라면 참고하세요**
 > 
-> There is no separate `char` data type in Python. There is no real need for it and I am sure you won't miss it.
+> 파이썬에는 `char` 같이 문자를 따로 저장할 수 있는 자료형이 없다는 것을 꼭 기억해주세요.
 
 <!-- -->
 
 > **Perl/PHP 프로그래머라면 참고하세요**
 > 
-> Remember that single-quoted strings and double-quoted strings are the same - they do not differ in any way.
+> 파이썬에서는 문자열을 작은 따옴표로 둘러싸든 큰 따옴표로 둘러싸든 차이가 없다는 사실을 꼭 기억해두도록 합시다.
 
 ### format() 메소드 사용하기
 
@@ -202,7 +201,7 @@ Output is:
 a b c
 ```
 
-### 이스케이프 문자
+### 제어 문자 (escape sequence)
 
 Suppose, you want to have a string which contains a single quote (`'`), how will you specify this string? For example, the string is `"What's your name?"`. You cannot specify `'What's your name?'` because Python will be confused as to where the string starts and ends. So, you will have to specify that this single quote does not indicate the end of the string. This can be done with the help of what is called an _escape sequence_. You specify the single quote as `\'` : notice the backslash. Now, you can specify the string as `'What\'s your name?'`.
 
@@ -245,7 +244,7 @@ r"Newlines are indicated by \n"
 
 Using just literal constants can soon become boring - we need some way of storing any information and manipulate them as well. This is where _variables_ come into the picture. Variables are exactly what the name implies - their value can vary, i.e., you can store anything using a variable. Variables are just parts of your computer's memory where you store some information. Unlike literal constants, you need some method of accessing these variables and hence you give them names.
 
-## Identifier Naming
+## 식별자 규칙
 
 Variables are examples of identifiers. _Identifiers_ are names given to identify _something_. There are some rules you have to follow for naming identifiers:
 
@@ -254,11 +253,11 @@ Variables are examples of identifiers. _Identifiers_ are names given to identify
 - Identifier names are case-sensitive. For example, `myname` and `myName` are _not_ the same. Note the lowercase `n` in the former and the uppercase `N` in the latter.
 - Examples of _valid_ identifier names are `i`, `name_2_3`. Examples of _invalid_ identifier names are `2things`, `this is spaced out`, `my-name` and `>a1b2_c3`.
 
-## Data Types
+## 자료형
 
 Variables can hold values of different types called _data types_. The basic types are numbers and strings, which we have already discussed. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
 
-## Object
+## 객체
 
 Remember, Python refers to anything used in a program as an _object_.  This is meant in the generic sense. Instead of saying "the _something_"', we say "the _object_".
 
