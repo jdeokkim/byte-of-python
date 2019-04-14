@@ -1,12 +1,11 @@
 # 연산자와 수식 {#op-exp}
 
-Most statements (logical lines) that you write will contain _expressions_. A simple example of an expression is `2 + 3`. An expression can be broken down into operators and operands.
-
-_Operators_ are functionality that do something and can be represented by symbols such as `+` or by special keywords. Operators require some data to operate on and such data is called _operands_. In this case, `2` and `3` are the operands.
+프로그램에 들어가는 대부분의 문장에는 `2 + 3`과 같은 _수식 (expressions)_이 들어있습니다. 가장 간단한 수식은 `5`와 같이 하나의 상수와 변수로 이루어져 있는 수식입니다.
+수식은 피연산자 (operand)와 연산자 (operator)의 조합으로 이루어집니다. 여기서 피연산자는 `2`나 `3`처럼 연산의 대상이 되는 값을, 연산자는 `+` 같은 연산 기호를 뜻합니다.
 
 ## 연산자
 
-We will briefly take a look at the operators and their usage.
+이제 파이썬의 다양한 연산자에 대해 알아보도록 하겠습니다.
 
 Note that you can evaluate the expressions given in the examples using the interpreter interactively. For example, to test the expression `2 + 3`, use the interactive Python interpreter prompt:
 
@@ -133,7 +132,7 @@ a *= 3
 
 Notice that `var = var operation expression` becomes `var operation= expression`.
 
-## Evaluation Order
+## 연산자의 우선순위 (Evaluation Order)
 
 If you had an expression such as `2 + 3 * 4`, is the addition done first or the multiplication? Our high school maths tells us that the multiplication should be done first. This means that the multiplication operator has higher precedence than the addition operator.
 
@@ -162,13 +161,15 @@ The operators which we have not already come across will be explained in later c
 
 Operators with the _same precedence_ are listed in the same row in the above table. For example, `+` and `-` have the same precedence.
 
-## Changing the Order Of Evaluation {#changing-order-of-evaluation}
+## 연산자 우선순위 바꾸기 {#changing-order-of-evaluation}
 
-To make the expressions more readable, we can use parentheses. For example, `2 + (3 * 4)` is definitely easier to understand than `2 + 3 * 4` which requires knowledge of the operator precedences. As with everything else, the parentheses should be used reasonably (do not overdo it) and should not be redundant, as in `(2 + (3 * 4))`.
+괄호를 사용하면 수식을 더 읽기 편하게 만들 수 있습니다. 괄호가 들어간 수식 `2 + (3 * 4)`는 수식 `2 + 3 * 4`보다 이해하기 쉽다는 것을 알 수 있습니다. 
+괄호는 지나치게 복잡하게 넣지 않아야 하고, `(2 + (3 * 4))`처럼 필요없는 괄호를 넣지 않는 것이 좋습니다.
 
-There is an additional advantage to using parentheses - it helps us to change the order of evaluation. For example, if you want addition to be evaluated before multiplication in an expression, then you can write something like `(2 + 3) * 4`.
+괄호를 사용하면서 얻게 되는 또다른 장점은 바로 괄호가 연산자의 우선순위를 바꾸게 해줄 수 있다는 것입니다. 
+For example, if you want addition to be evaluated before multiplication in an expression, then you can write something like `(2 + 3) * 4`.
 
-## Associativity
+## 연산자의 결합 규칙 (Associativity)
 
 Operators are usually associated from left to right. This means that operators with the same precedence are evaluated in a left to right manner. For example, `2 + 3 + 4` is evaluated as `(2 + 3) + 4`.
 
