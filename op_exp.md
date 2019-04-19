@@ -7,7 +7,9 @@
 
 이제 파이썬의 다양한 연산자에 대해 알아보도록 하겠습니다.
 
-Note that you can evaluate the expressions given in the examples using the interpreter interactively. For example, to test the expression `2 + 3`, use the interactive Python interpreter prompt:
+예시로 나온 모든 수식은 파이썬 인터프리터에서 바로 실행하고 결과를 확인해보실 수 있습니다.
+예를 들어, 수식 `2 + 3`의 결과값을 확인하려면, 파이썬 인터프리터에서 아래와 같이 수식을 그대로 입력하시면 됩니다.
+For example, to test the expression `2 + 3`, use the interactive Python interpreter prompt:
 
 ```python
 >>> 2 + 3
