@@ -1,7 +1,7 @@
 # 연산자와 수식 {#op-exp}
 
 프로그램에 들어가는 대부분의 문장에는 `2 + 3`과 같은 _수식 (expressions)_이 들어있습니다. 가장 간단한 수식은 `5`와 같이 하나의 상수와 변수로 이루어져 있는 수식입니다.
-수식은 피연산자 (operand)와 연산자 (operator)의 조합으로 이루어집니다. 여기서 피연산자는 `2`나 `3`처럼 연산의 대상이 되는 값을, 연산자는 `+` 같은 연산 기호를 뜻합니다.
+수식은 `2`나 `3`처럼 연산의 대상이 되는 값을 의미하는 피연산자 (operand)와 `+` 같은 연산 기호를 뜻하는 연산자 (operator)의 조합으로 이루어집니다.
 
 ## 연산자
 
@@ -9,7 +9,6 @@
 
 예시로 나온 모든 수식은 파이썬 인터프리터에서 바로 실행하고 결과를 확인해보실 수 있습니다.
 예를 들어, 수식 `2 + 3`의 결과값을 확인하려면, 파이썬 인터프리터에서 아래와 같이 수식을 그대로 입력하시면 됩니다.
-For example, to test the expression `2 + 3`, use the interactive Python interpreter prompt:
 
 ```python
 >>> 2 + 3
@@ -19,7 +18,7 @@ For example, to test the expression `2 + 3`, use the interactive Python interpre
 >>>
 ```
 
-Here is a quick overview of the available operators:
+파이썬 3에서 사용할 수 있는 연산자는 다음과 같습니다.
 
 - `+` (plus)
     - Adds two objects
@@ -134,7 +133,7 @@ a *= 3
 
 Notice that `var = var operation expression` becomes `var operation= expression`.
 
-## 연산자의 우선순위 (Evaluation Order)
+## 연산자의 우선순위 (Order of Evaluation)
 
 If you had an expression such as `2 + 3 * 4`, is the addition done first or the multiplication? Our high school maths tells us that the multiplication should be done first. This means that the multiplication operator has higher precedence than the addition operator.
 
