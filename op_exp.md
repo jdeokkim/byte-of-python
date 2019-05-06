@@ -1,6 +1,6 @@
 # 연산자와 수식 {#op-exp}
 
-프로그램에 들어가는 대부분의 문장에는 `2 + 3`과 같은 _수식 (expressions)_이 들어있습니다. 가장 간단한 수식은 `5`와 같이 하나의 상수와 변수로 이루어져 있는 수식입니다.
+프로그램에 들어가는 대부분의 문장에는 `2 + 3`과 같은 수식 (expressions)이 들어있습니다. 가장 간단한 수식은 `5`와 같이 하나의 상수와 변수로 이루어져 있는 수식입니다.
 수식은 `2`나 `3`처럼 연산의 대상이 되는 값을 의미하는 피연산자 (operand)와 `+` 같은 연산 기호를 뜻하는 연산자 (operator)의 조합으로 이루어집니다.
 
 ## 연산자
@@ -20,102 +20,102 @@
 
 파이썬 3에서 사용할 수 있는 연산자는 다음과 같습니다.
 
-- `+` (plus)
-    - Adds two objects
-    - `3 + 5` gives `8`. `'a' + 'b'` gives `'ab'`.
+- `+`
+    - 두 수 또는 두 개의 문자열을 더합니다.
+    - `3 + 5`의 결과값은 `8`이고, `'a' + 'b'`의 결과값은 `'ab'`입니다.
 
-- `-` (minus)
-    - Gives the subtraction of one number from the other; if the first operand is absent it is assumed to be zero.
-    - `-5.2` gives a negative number and `50 - 24` gives `26`.
+- `-`
+    - 첫 번째 수에서 두 번째 수를 뺍니다.
+    - `-5.2`의 결과값은 `-5.2`이고, `50 - 24`의 결과값은 `26`입니다.
 
-- `*` (multiply)
-    - Gives the multiplication of the two numbers or returns the string repeated that many times.
-    - `2 * 3` gives `6`. `'la' * 3` gives `'lalala'`.
+- `*`
+    - 두 수를 곱하거나 문자열을 정해진 횟수만큼 반복합니다.
+    - `2 * 3`의 결과값은 `6`이고, `'la' * 3`의 결과값은 `'lalala'`입니다.
 
-- `**` (power)
-    - Returns x to the power of y
-    - `3 ** 4` gives `81` (i.e. `3 * 3 * 3 * 3`)
+- `**` (제곱 연산자)
+    - 첫 번째 수를 `x`, 두 번째 수를 `y`라고 할 때, `x`를 `y` 제곱합니다.
+    - `3 ** 4`의 결과값은 `3 * 3 * 3 * 3`, 즉 `81`입니다.
 
-- `/` (divide)
-    - Divide x by y
-    - `13 / 3` gives `4.333333333333333`
+- `/` 
+    - 첫 번째 수를 두 번째 수로 나눕니다.
+    - `13 / 3`의 결과값은 `4.333333333333333`입니다.
 
-- `//` (divide and floor)
-    - Divide x by y and round the answer _down_ to the nearest integer value. Note that if one of the values is a float, you'll get back a float.
-    - `13 // 3` gives `4`
-    - `-13 // 3` gives `-5`
-    - `9//1.81` gives `4.0`
+- `//` (나눗셈 후 버림 연산자)
+    - 첫 번째 수를 `x`, 두 번째 수를 `y`라고 할 때, `x`를 `y`로 나누고 결과값의 소수점은 버립니다. `x`와 `y` 둘 중에 하나가 부동 소수형 데이터이면 결과값은 부동 소수형 데이터가 됩니다.
+    - `13 // 3`의 결과값은 `4`이고,
+    - `-13 // 3`의 결과값은 `-5`,
+    - `9 // 1.81`의 결과값은 `4.0`입니다.
 
-- `%` (modulo)
-    - Returns the remainder of the division
+- `%` (나머지 연산자, modulo 연산자)
+    - 두 수를 나누었을 때의 나머지를 구합니다.
     - `13 % 3` gives `1`. `-25.5 % 2.25` gives `1.5`.
 
-- `<<` (left shift)
+- `<<` 
     - Shifts the bits of the number to the left by the number of bits specified. (Each number is represented in memory by bits or binary digits i.e. 0 and 1)
     - `2 << 2` gives `8`. `2` is represented by `10` in bits.
     - Left shifting by 2 bits gives `1000` which represents the decimal `8`.
 
-- `>>` (right shift)
+- `>>`
     - Shifts the bits of the number to the right by the number of bits specified.
     - `11 >> 1` gives `5`.
     - `11` is represented in bits by `1011` which when right shifted by 1 bit gives `101`which is the decimal `5`.
 
-- `&` (bit-wise AND)
+- `&`
     - Bit-wise AND of the numbers
     - `5 & 3` gives `1`.
 
-- `|` (bit-wise OR)
+- `|`
     - Bitwise OR of the numbers
     - `5 | 3` gives `7`
 
-- `^` (bit-wise XOR)
+- `^`
     - Bitwise XOR of the numbers
     - `5 ^ 3` gives `6`
 
-- `~` (bit-wise invert)
+- `~`
     - The bit-wise inversion of x is -(x+1)
     - `~5` gives `-6`. More details at http://stackoverflow.com/a/11810203
 
-- `<` (less than)
+- `<`
     - Returns whether x is less than y. All comparison operators return `True` or `False`. Note the capitalization of these names.
     - `5 < 3` gives `False` and `3 < 5` gives `True`.
     - Comparisons can be chained arbitrarily: `3 < 5 < 7` gives `True`.
 
-- `>` (greater than)
+- `>`
     - Returns whether x is greater than y
     - `5 > 3` returns `True`. If both operands are numbers, they are first converted to a common type. Otherwise, it always returns `False`.
 
-- `<=` (less than or equal to)
+- `<=`
     - Returns whether x is less than or equal to y
     - `x = 3; y = 6; x <= y` returns `True`
 
-- `>=` (greater than or equal to)
+- `>=`
     - Returns whether x is greater than or equal to y
     - `x = 4; y = 3; x >= 3` returns `True`
 
-- `==` (equal to)
+- `==`
     - Compares if the objects are equal
     - `x = 2; y = 2; x == y` returns `True`
     - `x = 'str'; y = 'stR'; x == y` returns `False`
     - `x = 'str'; y = 'str'; x == y` returns `True`
 
-- `!=` (not equal to)
+- `!=`
     - Compares if the objects are not equal
     - `x = 2; y = 3; x != y` returns `True`
 
-- `not` (boolean NOT)
+- `not` (논리 NOT 연산자)
     - If x is `True`, it returns `False`. If x is `False`, it returns `True`.
     - `x = True; not x` returns `False`.
 
-- `and` (boolean AND)
+- `and` (논리 AND 연산자)
     - `x and y` returns `False` if x is `False`, else it returns evaluation of y
     - `x = False; y = True; x and y` returns `False` since x is False. In this case, Python will not evaluate y since it knows that the left hand side of the 'and' expression is `False` which implies that the whole expression will be `False` irrespective of the other values. This is called short-circuit evaluation.
 
-- `or` (boolean OR)
+- `or` (논리 OR 연산자)
     - If x is `True`, it returns True, else it returns evaluation of y
     - `x = True; y = False; x or y` returns `True`. Short-circuit evaluation applies here as well.
 
-## Shortcut for math operation and assignment
+## 산술 연산과 대입 연산 합치기
 
 It is common to run a math operation on a variable and then assign the result of the operation back to the variable, hence there is a shortcut for such expressions:
 

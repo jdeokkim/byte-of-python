@@ -1,10 +1,13 @@
 # Functions
 
-Functions are reusable pieces of programs. They allow you to give a name to a block of statements, allowing you to run that block using the specified name anywhere in your program and any number of times. This is known as *calling* the function. We have already used many built-in functions such as `len` and `range`.
+프로그램에서 재사용이 가능한 소스 코드의 일부분을 함수라고 합니다. 함수는 여러 개의 문장에 특별한 이름을 붙인 것이며, 
+함수는 프로그램의 어느 곳에서든 정해진 이름으로 블록 안의 문장을 실행할 수 있게 합니다. 이것을 함수의 *호출*이라고 부릅니다.
+`len`이나 `range`도 모두 파이썬 표준 라이브러리가 제공하는 *함수*입니다.
 
-The function concept is probably *the* most important building block of any non-trivial software (in any programming language), so we will explore various aspects of functions in this chapter.
+함수라는 개념은 모든 프로그래밍 언어에서 프로그램을 구성하는 가장 중요한 부분이기 때문에, 이번 장에서는 함수의 다양한 특징에 대해 자세히 알아보도록 하겠습니다.
 
-Functions are defined using the `def` keyword. After this keyword comes an *identifier* name for the function, followed by a pair of parentheses which may enclose some names of variables, and by the final colon that ends the line. Next follows the block of statements that are part of this function. An example will show that this is actually very simple:
+파이썬에서 함수를 정의할 때는 `def` 키워드를 사용합니다. `def` 키워드 다음에는 함수의 이름이 되는 *식별자*와 변수의 이름이 들어갈 수도 있는 소괄호 한 쌍이 오고, 줄의 맨 끝에는 콜론 (`:`)을 붙여줍니다.
+그 다음 줄부터는 함수의 내용이 되는 여러 개의 문장이 들어갑니다. 아래의 코드는 함수의 간단한 예제입니다.
 
 Example (save as `function1.py`):
 
@@ -20,7 +23,7 @@ We define a function called `say_hello` using the syntax as explained above. Thi
 
 Notice that we can call the same function twice which means we do not have to write the same code again.
 
-## Function Parameters
+## 함수의 매개 변수 (Function Parameters)
 
 A function can take parameters, which are values you supply to the function so that the function
 can *do* something utilising those values. These parameters are just like variables except that the
@@ -46,7 +49,7 @@ Here, we define a function called `print_max` that uses two parameters called `a
 
 The first time we call the function `print_max`, we directly supply the numbers as arguments. In the second case, we call the function with variables as arguments. `print_max(x, y)` causes the value of argument `x` to be assigned to parameter `a` and the value of argument `y` to be assigned to parameter `b`. The `print_max` function works the same way in both cases.
 
-## Local Variables
+## 지역 변수
 
 When you declare variables inside a function definition, they are not related in any way to other variables with the same names used outside the function - i.e. variable names are *local* to the function. This is called the *scope* of the variable. All variables have the scope of the block they are declared in starting from the point of definition of the name.
 
@@ -66,7 +69,7 @@ Next, we assign the value `2` to `x`. The name `x` is local to our function.  So
 
 With the last `print` statement, we display the value of `x` as defined in the main block, thereby confirming that it is actually unaffected by the local assignment within the previously called function.
 
-## The `global` statement {#global-statement}
+## `global` 문장 {#global-statement}
 
 If you want to assign a value to a name defined at the top level of the program (i.e. not inside any kind of scope such as functions or classes), then you have to tell Python that the name is not local, but it is *global*. We do this using the `global` statement. It is impossible to assign a value to a variable defined outside a function without the `global` statement.
 
@@ -157,7 +160,7 @@ Similarly, when we declare a double-starred parameter such as `**param`, then al
 
 We will explore tuples and dictionaries in a [later chapter](./data_structures.md#data-structures).
 
-## The `return` statement {#return-statement}
+## `return` 문장 {#return-statement}
 
 The `return` statement is used to *return* from a function i.e. break out of the function. We can optionally *return a value* from the function as well.
 
@@ -186,7 +189,7 @@ The `pass` statement is used in Python to indicate an empty block of statements.
 
 > TIP: There is a built-in function called `max` that already implements the 'find maximum' functionality, so use this built-in function whenever possible.
 
-## DocStrings
+## 코드의 문서화
 
 Python has a nifty feature called *documentation strings*, usually referred to by its shorter name *docstrings*. DocStrings are an important tool that you should make use of since it helps to document the program better and makes it easier to understand. Amazingly, we can even get the docstring back from, say a function, when the program is actually running!
 
