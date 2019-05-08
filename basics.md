@@ -68,7 +68,7 @@ He said "Bond, James Bond."
 ```
 
 ### 문자열의 특성
-문자열은 한번 만들면 절대로 다시 변경할 수 없습니다. Although this might seem like
+문자열은 한번 만들면 그 내용을 절대로 다시 변경할 수 없습니다. Although this might seem like
 a bad thing, it really isn't. We will see why this is not a limitation in the various programs that
 we see later on.
 
@@ -82,9 +82,9 @@ we see later on.
 > 
 > 파이썬에서는 문자열을 작은 따옴표로 둘러싸든 큰 따옴표로 둘러싸든 차이가 없다는 사실을 꼭 기억해두도록 합시다.
 
-### format() 메소드 사용하기
+### `format()` 메소드 사용하기
 
-Sometimes we may want to construct strings from other information. This is where the `format()` method is useful.
+문자열에 수식이나 변수의 값 같은 여러가지 정보를 넣어야 할 때는 `format()` 메소드를 사용합니다.
 
 Save the following lines as a file `str_format.py`:
 
@@ -255,7 +255,7 @@ Variables are examples of identifiers. _Identifiers_ are names given to identify
 
 ## 자료형
 
-Variables can hold values of different types called _data types_. The basic types are numbers and strings, which we have already discussed. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
+변수는 _자료형_ (data types)이라고 부르는 여러가지 종류의 값을 가질 수 있습니다. The basic types are numbers and strings, which we have already discussed. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
 
 ## 객체
 
