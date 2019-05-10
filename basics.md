@@ -86,7 +86,7 @@ we see later on.
 
 문자열에 수식이나 변수의 값 같은 여러가지 정보를 넣어야 할 때는 `format()` 메소드를 사용합니다.
 
-Save the following lines as a file `str_format.py`:
+아래의 코드를 `str_format.py`로 저장하고 실행하세요:
 
 ```python
 age = 20
@@ -96,7 +96,7 @@ print('{0} was {1} years old when he wrote this book'.format(name, age))
 print('Why is {0} playing with that python?'.format(name))
 ```
 
-Output:
+출력:
 
 ```
 $ python str_format.py
@@ -104,7 +104,7 @@ Swaroop was 20 years old when he wrote this book
 Why is Swaroop playing with that python?
 ```
 
-**How It Works**
+**코드 설명**
 
 A string can use certain specifications and subsequently, the `format` method can be called to substitute those specifications with corresponding arguments to the `format` method.
 
@@ -393,7 +393,7 @@ Sometimes, there is an implicit assumption where you don't need to use a backsla
 
 ## 들여쓰기 (Indentation)
 
-Whitespace is important in Python. Actually, *whitespace at the beginning of the line is important*. This is called _indentation_. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
+파이썬에서 공백은 매우 중요한데, *줄 바로 앞의 공백*은 특히 더 중요합니다. 이것을 _들여쓰기_라고 합니다. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
 
 This means that statements which go together _must_ have the same indentation. Each such set of statements is called a *block*. We will see examples of how blocks are important in later chapters.
 
