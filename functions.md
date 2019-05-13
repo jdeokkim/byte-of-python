@@ -23,17 +23,12 @@ We define a function called `say_hello` using the syntax as explained above. Thi
 
 Notice that we can call the same function twice which means we do not have to write the same code again.
 
-## 함수의 매개 변수 (Function Parameters)
+## 함수의 매개 변수
 
-A function can take parameters, which are values you supply to the function so that the function
-can *do* something utilising those values. These parameters are just like variables except that the
-values of these variables are defined when we call the function and are already assigned values
-when the function runs.
+함수에 전달되는 값이 저장되는 변수를 매개 변수 (parameter)라고 합니다. 매개 변수는 일반적인 변수와 다르게 그 값이 함수가 호출될 때 정의됩니다.
 
-Parameters are specified within the pair of parentheses in the function definition, separated by
-commas. When we call the function, we supply the values in the same way.  Note the terminology
-used - the names given in the function definition are called *parameters* whereas the values you
-supply in the function call are called *arguments*.
+매개 변수는 함수를 정의할 때 함수의 이름 뒤에 오는 소괄호 안에서 같이 정의해야 하며, 쉼표 (comma, ',')를 사용하여 여러 개의 매개 변수를 정의할 수 있습니다.
+함수를 호출할 때도 쉼표를 사용하여 함수에 값을 전달합니다. 함수에 전달되는 값은 인수 (argument)라고 부르지만 그 인수를 저장하는 변수는 매개 변수라고 부른다는 것을 꼭 기억하시기 바랍니다.
 
 Example (save as `function_param.py`):
 
@@ -51,7 +46,8 @@ The first time we call the function `print_max`, we directly supply the numbers 
 
 ## 지역 변수
 
-When you declare variables inside a function definition, they are not related in any way to other variables with the same names used outside the function - i.e. variable names are *local* to the function. This is called the *scope* of the variable. All variables have the scope of the block they are declared in starting from the point of definition of the name.
+함수의 몸체 안에서 변수를 선언하는 경우, 그 변수와 이름이 같으면서 함수의 몸체 바깥에 정의되어 있는 변수들은 서로 접근할 수 없게 됩니다. 
+변수에 접근할 수 있는 범위를 변수의 유효 범위 (function scope)라고 하며, 변수를 선언하는 순간 그 변수의 유효 범위는 함수가 선언된 곳부터 함수가 속해있는 블록의 끝까지가 됩니다.
 
 Example (save as `function_local.py`):
 
@@ -118,7 +114,7 @@ In the first usage of `say`, we supply only the string and it prints the string 
 > This is because the values are assigned to the parameters by position. For example,`def func(a,
 > b=5)` is valid, but `def func(a=5, b)` is *not valid*.
 
-## Keyword Arguments
+## 키워드 매개 변수 (Keyword Parameters)
 
 If you have some functions with many parameters and you want to specify only some of them, then you can give values for such parameters by naming them - this is called *keyword arguments* - we use the name (keyword) instead of the position (which we have been using all along) to specify the arguments to the function.
 
@@ -142,7 +138,7 @@ In the second usage `func(25, c=24)`, the variable `a` gets the value of 25 due 
 
 In the third usage `func(c=50, a=100)`, we use keyword arguments for all specified values. Notice that we are specifying the value for parameter `c` before that for `a` even though `a` is defined before `c` in the function definition.
 
-## VarArgs parameters
+## 가변 매개 변수 (VarArgs Parameters)
 
 Sometimes you might want to define a function that can take _any_ number of parameters, i.e. **var**iable number of **arg**uments, this can be achieved by using the stars (save as `function_varargs.py`):
 
@@ -213,7 +209,7 @@ If you have used `help()` in Python, then you have already seen the usage of doc
 
 Automated tools can retrieve the documentation from your program in this manner. Therefore, I *strongly recommend* that you use docstrings for any non-trivial function that you write. The `pydoc` command that comes with your Python distribution works similarly to `help()` using docstrings.
 
-## Summary
+## 요약
 
 We have seen so many aspects of functions but note that we still haven't covered all aspects of them. However, we have already covered most of what you'll use regarding Python functions on an everyday basis.
 
