@@ -23,7 +23,7 @@ We define a function called `say_hello` using the syntax as explained above. Thi
 
 Notice that we can call the same function twice which means we do not have to write the same code again.
 
-## 함수의 매개 변수
+## 함수의 매개 변수 (Function Parameters)
 
 함수에 전달되는 값이 저장되는 변수를 매개 변수 (parameter)라고 합니다. 매개 변수는 일반적인 변수와 다르게 그 값이 함수가 호출될 때 정의됩니다.
 
