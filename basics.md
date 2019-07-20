@@ -68,9 +68,8 @@ He said "Bond, James Bond."
 ```
 
 ### 문자열의 특성
-문자열은 한번 만들면 그 내용을 절대로 다시 변경할 수 없습니다. Although this might seem like
-a bad thing, it really isn't. We will see why this is not a limitation in the various programs that
-we see later on.
+문자열은 한번 만들면 그 내용을 절대로 다시 변경할 수 없습니다. 처음에는 익숙하게 느껴지지 않을 수도 있겠지만, 
+이 책을 읽다 보면 이러한 문자열의 특성이 큰 문제가 되지 않는다는 것을 깨닫게 될 것입니다.
 
 > **C/C++ 프로그래머라면 참고하세요**
 > 
@@ -80,7 +79,7 @@ we see later on.
 
 > **Perl/PHP 프로그래머라면 참고하세요**
 > 
-> 파이썬에서는 문자열을 작은 따옴표로 둘러싸든 큰 따옴표로 둘러싸든 차이가 없다는 사실을 꼭 기억해두도록 합시다.
+> 파이썬에서는 문자열을 작은 따옴표로 둘러싸든 큰 따옴표로 둘러싸든 차이가 없다는 사실을 꼭 기억합시다.
 
 ### `format()` 메소드 사용하기
 
@@ -106,19 +105,20 @@ Why is Swaroop playing with that python?
 
 **코드 설명**
 
-A string can use certain specifications and subsequently, the `format` method can be called to substitute those specifications with corresponding arguments to the `format` method.
+문자열을 만들 때는 어디에 데이터가 들어가야 하는지를 지정할 수 있으며, `format` 메소드에 넘겨준 값을 통해 그 자리에 어떤 정보가 들어가야 하는지를 지정할 수 있습니다.
 
-Observe the first usage where we use `{0}` and this corresponds to the variable `name` which is the first argument to the format method. Similarly, the second specification is `{1}` corresponding to `age` which is the second argument to the format method. Note that Python starts counting from 0 which means that first position is at index 0, second position is at index 1, and so on.
-
-Notice that we could have achieved the same using string concatenation:
+위 코드에서 첫 번째 형식 지정자인 `{0}`는 `format` 메소드의 첫 번째 인수인 변수 `name`에 대응하고, 두 번째 형식 지정자인 `{1}`은 `format` 메소드의 두 번째 인수인 변수 `age`에 대응하는 것을 확인할 수 있습니다.
+또한 여기서 형식 지정자의 인덱스는 0부터 시작한다는 사실을 알 수 있습니다.
 
 ```python
 name + ' is ' + str(age) + ' years old'
 ```
 
-but that is much uglier and error-prone. Second, the conversion to string would be done automatically by the `format` method instead of the explicit conversion to strings needed in this case. Third, when using the `format` method, we can change the message without having to deal with the variables used and vice-versa.
+물론, 위의 코드처럼 문자열 여러 개를 이어 붙이는 것도 가능하지만, 깔끔해보이지 않고 오류가 발생할 가능성이 높다는 것을 확인할 수 있습니다.
+`format` 메소드을 사용해서 얻을 수 있는 또다른 장점은 숫자 등을 문자열로 직접 변환할 필요 없이 자동으로 변수의 값을 문자열로 변환할 수 있다는 것입니다.
+또한, 문자열에 사용되는 변수의 이름이 바뀌더라도 문자열을 직접 바꾸지 않아도 된다는 장점이 있습니다.
 
-Also note that the numbers are optional, so you could have also written as:
+`format` 메소드에서 형식 지정자의 인덱스는 생략이 가능하기 때문에, 다음과 같이 코드를 작성해도 무방합니다.
 
 ```python
 age = 20
@@ -128,9 +128,7 @@ print('{} was {} years old when he wrote this book'.format(name, age))
 print('Why is {} playing with that python?'.format(name))
 ```
 
-which will give the same exact output as the previous program.
-
-We can also name the parameters:
+다음과 같이 인수를 직접 지정할 수도 있습니다.
 
 ```python
 age = 20
@@ -140,9 +138,7 @@ print('{name} was {age} years old when he wrote this book'.format(name=name, age
 print('Why is {name} playing with that python?'.format(name=name))
 ```
 
-which will give the same exact output as the previous program.
-
-Python 3.6 introduced a shorter way to do named parameters, called "f-strings":
+파이썬 3.6에서는 `format` 메소드를 사용하지 않아도 형식화가 자동으로 이루어지는 "f-문자열"이 추가되었습니다.
 
 ```python
 age = 20
@@ -151,8 +147,6 @@ name = 'Swaroop'
 print(f'{name} was {age} years old when he wrote this book')  # notice the 'f' before the string
 print(f'Why is {name} playing with that python?')  # notice the 'f' before the string
 ```
-
-which will give the same exact output as the previous program.
 
 What Python does in the `format` method is that it substitutes each argument value into the place of the specification. There can be more detailed specifications such as:
 
@@ -201,7 +195,7 @@ Output is:
 a b c
 ```
 
-### 제어 문자 (escape sequence)
+### 제어 문자
 
 Suppose, you want to have a string which contains a single quote (`'`), how will you specify this string? For example, the string is `"What's your name?"`. You cannot specify `'What's your name?'` because Python will be confused as to where the string starts and ends. So, you will have to specify that this single quote does not indicate the end of the string. This can be done with the help of what is called an _escape sequence_. You specify the single quote as `\'` : notice the backslash. Now, you can specify the string as `'What\'s your name?'`.
 
@@ -255,7 +249,7 @@ Variables are examples of identifiers. _Identifiers_ are names given to identify
 
 ## 자료형
 
-변수는 _자료형_ (data types)이라고 부르는 여러가지 종류의 값을 가질 수 있습니다. The basic types are numbers and strings, which we have already discussed. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
+변수는 _자료형_ (data types)이라고 부르는 여러 종류의 값을 가질 수 있습니다. The basic types are numbers and strings, which we have already discussed. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
 
 ## 객체
 
@@ -267,7 +261,7 @@ Remember, Python refers to anything used in a program as an _object_.  This is m
 
 We will now see how to use variables along with literal constants. Save the following example and run the program.
 
-## How to write Python programs
+## 기본적인 파이썬 프로그램 작성법
 
 Henceforth, the standard procedure to save and run a Python program is as follows:
 
@@ -391,13 +385,10 @@ i = 5
 
 Sometimes, there is an implicit assumption where you don't need to use a backslash. This is the case where the logical line has a starting parentheses, starting square brackets or a starting curly braces but not an ending one. This is called *implicit line joining*. You can see this in action when we write programs using [list](./data_structures.md#lists) in later chapters.
 
-## 들여쓰기 (Indentation)
+## 들여쓰기
 
-파이썬에서 공백은 매우 중요한데, *줄 바로 앞의 공백*은 특히 더 중요합니다. 이것을 _들여쓰기_라고 합니다. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
-
-This means that statements which go together _must_ have the same indentation. Each such set of statements is called a *block*. We will see examples of how blocks are important in later chapters.
-
-One thing you should remember is that wrong indentation can give rise to errors. For example:
+파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 이것을 _들여쓰기_라고 합니다. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
+이것은 같은 블록에서 실행되는 _모든 문장이 똑같이 들여쓰기가 되어 있어야_ 한다는 것을 의미합니다. 들여쓰기를 제대로 하지 않으면 프로그램을 실행할 때 오류가 발생할 수 있습니다.
 
 ```python
 i = 5
@@ -406,7 +397,7 @@ i = 5
 print('I repeat, the value is', i)
 ```
 
-When you run this, you get the following error:
+위 코드를 실행하면, 다음과 같은 오류가 발생하는 것을 확인할 수 있습니다.
 
 ```
   File "whitespace.py", line 3
@@ -417,15 +408,16 @@ IndentationError: unexpected indent
 
 Notice that there is a single space at the beginning of the second line. The error indicated by Python tells us that the syntax of the program is invalid i.e. the program was not properly written. What this means to you is that _you cannot arbitrarily start new blocks of statements_ (except for the default main block which you have been using all along, of course). Cases where you can use new blocks will be detailed in later chapters such as the [control flow](./control_flow.md#control_flow).
 
-> **How to indent**
+> **들여쓰기 팁**
 > 
-> Use four spaces for indentation. This is the official Python language recommendation. Good editors will automatically do this for you. Make sure you use a consistent number of spaces for indentation, otherwise your program will not run or will have unexpected behavior.
+> 파이썬은 들여쓰기로 공백 4개를 사용하는 것을 권장하고 있습니다. 대부분의 파이썬 IDE는 공백 4개를 자동으로 넣어줄 것입니다. 
+들여쓰기를 할 때 공백을 일정한 개수로 넣지 않으면 프로그램이 제대로 실행되지 않을 수 있습니다.
 
 <!-- -->
 
-> **Note to static language programmers**
+> **중괄호에 익숙한 프로그래머라면 주의하세요**
 > 
-> Python will always use indentation for blocks and will never use braces. Run `from __future__ import braces` to learn more.
+> 파이썬에서 블록을 만들기 위해서는 중괄호 대신 무조건 공백을 사용해야 합니다.
 
 ## 정리
 
