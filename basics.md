@@ -29,11 +29,11 @@ print('hello world')
 
 ## 리터럴
 
-`5`, `1.23`, `'This is a string'`, `"It's a string!"`처럼 절대 변하지 않는 데이터 그 자체를 리터럴(literals)이라고 부릅니다.
+`5`, `1.23`, `'This is a string'`, `"It's a string!"`처럼 절대 변하지 않는 데이터 그 자체를 리터럴 (literal)이라고 부릅니다.
 
-리터럴([literal](https://dictionary.cambridge.org/dictionary/english/literal))은 영어로 '문자 그대로의'라는 뜻으로, _문자 그대로_ 값을 사용하기 때문에 붙은 이름입니다. 예를 들어, 숫자 `2`는 항상 2라는 값을 나타내고 절대로 변하지 않습니다.
+리터럴([literal](https://dictionary.cambridge.org/dictionary/english/literal))은 영어로 '글자 그대로의'라는 뜻으로, _글자 그대로_ 값을 사용하기 때문에 붙은 이름입니다. 예를 들어, 숫자 `2`는 항상 2라는 값을 나타내고 절대로 변하지 않습니다.
 
-> **참고: 다른 프로그래밍 언어에서 배우는 상수(constant)와 리터럴의 차이점은 다음과 같습니다.**
+> **참고: 다른 프로그래밍 언어에서 배우는 상수 (constant)와 리터럴의 차이점은 다음과 같습니다.**
 > - 상수는 정의한 다음에 그 값을 지정해주어야 합니다.
 > - 리터럴은 변수나 상수에 지정되거나 단독으로 쓰이는 값 그 자체를 말합니다.
 
@@ -73,17 +73,17 @@ He said "Bond, James Bond."
 
 > **C/C++ 프로그래머라면 참고하세요**
 > 
-> 파이썬에는 `char` 같이 문자를 따로 저장할 수 있는 자료형이 없다는 것을 꼭 기억해주세요.
+> 파이썬에는 `char` 같이 문자를 따로 저장할 수 있는 자료형이 없습니다.
 
 <!-- -->
 
 > **Perl/PHP 프로그래머라면 참고하세요**
 > 
-> 파이썬에서는 문자열을 작은 따옴표로 둘러싸든 큰 따옴표로 둘러싸든 차이가 없다는 사실을 꼭 기억합시다.
+> 파이썬에서는 문자열을 작은 따옴표로 둘러싸든 큰 따옴표로 둘러싸든 차이가 없다는 사실!
 
-### `format()` 메소드 사용하기
+### `format` 메소드 사용하기
 
-문자열에 수식이나 변수의 값 같은 여러가지 정보를 넣어야 할 때는 `format()` 메소드를 사용합니다.
+문자열에 수식이나 변수의 값 같은 여러가지 정보를 넣어야 할 때는 `format` 메소드를 사용합니다.
 
 아래의 코드를 `str_format.py`로 저장하고 실행하세요:
 
@@ -105,7 +105,7 @@ Why is Swaroop playing with that python?
 
 **코드 설명**
 
-문자열을 만들 때는 어디에 데이터가 들어가야 하는지를 지정할 수 있으며, `format` 메소드에 넘겨준 값을 통해 그 자리에 어떤 정보가 들어가야 하는지를 지정할 수 있습니다.
+문자열을 만들 때는 데이터를 어느 위치에 출력해야 하는지를 지정할 수 있으며, `format` 메소드에 넘겨준 값을 통해 그 자리에 어떤 정보가 들어가야 하는지를 지정할 수 있습니다.
 
 위 코드에서 첫 번째 형식 지정자인 `{0}`는 `format` 메소드의 첫 번째 인수인 변수 `name`에 대응하고, 두 번째 형식 지정자인 `{1}`은 `format` 메소드의 두 번째 인수인 변수 `age`에 대응하는 것을 확인할 수 있습니다.
 또한 여기서 형식 지정자의 인덱스는 0부터 시작한다는 사실을 알 수 있습니다.
@@ -148,7 +148,7 @@ print(f'{name} was {age} years old when he wrote this book')  # notice the 'f' b
 print(f'Why is {name} playing with that python?')  # notice the 'f' before the string
 ```
 
-What Python does in the `format` method is that it substitutes each argument value into the place of the specification. There can be more detailed specifications such as:
+아래와 같이 형식 지정자의 출력 형식을 세부적으로 지정할 수도 있습니다.
 
 ```python
 # decimal (.) precision of 3 for float '0.333'
@@ -160,7 +160,7 @@ print('{0:_^11}'.format('hello'))
 print('{name} wrote {book}'.format(name='Swaroop', book='A Byte of Python'))
 ```
 
-Output:
+출력:
 
 ```
 0.333
@@ -168,31 +168,20 @@ ___hello___
 Swaroop wrote A Byte of Python
 ```
 
-Since we are discussing formatting, note that `print` always ends with an invisible "new line" character (`\n`) so that repeated calls to `print` will all print on a separate line each. To prevent this newline character from being printed, you can specify that it should `end` with a blank:
+### `print` 함수
+
+`print` 함수를 사용할 때는 문자열 끝에 개행 문자 (`\n`)가 자동으로 추가된다는 것에 주의해야 합니다. 아래와 같이 문자열 끝에 들어갈 문자를 직접 지정해서 개행 문자가 추가되는 것을 막을 수 있습니다.
 
 ```python
 print('a', end='')
-print('b', end='')
-```
-
-Output is:
-
-```
-ab
-```
-
-Or you can `end` with a space:
-
-```python
-print('a', end=' ')
 print('b', end=' ')
 print('c')
 ```
 
-Output is:
+출력:
 
 ```
-a b c
+ab c
 ```
 
 ### 제어 문자
@@ -236,7 +225,7 @@ r"Newlines are indicated by \n"
 
 ## 변수
 
-Using just literal constants can soon become boring - we need some way of storing any information and manipulate them as well. This is where _variables_ come into the picture. Variables are exactly what the name implies - their value can vary, i.e., you can store anything using a variable. Variables are just parts of your computer's memory where you store some information. Unlike literal constants, you need some method of accessing these variables and hence you give them names.
+프로그램을 작성할 때는 리터럴 상수 대신에 어떤 값을 저장도 할 수 있고 변경도 할 수 있는 무언가가 필요할 때가 있는데, 이것을 _변수_ (variable)라고 합니다. Variables are exactly what the name implies - their value can vary, i.e., you can store anything using a variable. Variables are just parts of your computer's memory where you store some information. Unlike literal constants, you need some method of accessing these variables and hence you give them names.
 
 ## 식별자 규칙
 
@@ -320,7 +309,7 @@ Similarly, we assign the literal string to the variable `s` and then print it.
 > 
 > Variables are used by just assigning them a value. No declaration or data type definition is needed/used.
 
-## Logical And Physical Line
+## 논리적 줄과 물리적 줄
 
 A physical line is what you _see_ when you write the program. A logical line is what _Python sees_ as a single statement. Python implicitly assumes that each _physical line_ corresponds to a _logical line_.
 
@@ -421,5 +410,5 @@ Notice that there is a single space at the beginning of the second line. The err
 
 ## 정리
 
-Now that we have gone through many nitty-gritty details, we can move on to more interesting stuff such as control flow statements. Be sure to become comfortable with what you have read in this chapter.
+이번 장에서는 파이썬 프로그래머가 되기 위해 꼭 필요한 기초 지식에 대해 배웠습니다. 반드시 모든 내용을 완벽하게 이해하고 다음 장으로 넘어가도록 합시다.
 
