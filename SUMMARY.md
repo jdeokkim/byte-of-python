@@ -13,7 +13,7 @@
 * [모듈](modules.md)
 * [자료 구조란?](data_structures.md)
 * [실용적 프로그램 만들기](problem_solving.md)
-* [객체 지향 프로그래밍 (Object-Oriented Programming)](oop.md)
+* [객체 지향 프로그래밍](oop.md)
 * [입력과 출력](io.md)
 * [예외란?](exceptions.md)
 * [표준 라이브러리](stdlib.md)
