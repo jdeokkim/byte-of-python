@@ -311,13 +311,12 @@ Similarly, we assign the literal string to the variable `s` and then print it.
 
 ## 논리적 줄과 물리적 줄
 
-A physical line is what you _see_ when you write the program. A logical line is what _Python sees_ as a single statement. Python implicitly assumes that each _physical line_ corresponds to a _logical line_.
+물리적 줄이란 프로그램을 짤 때 보이는 _말 그대로의 줄_을 의미하고, 논리적 줄이란 _파이썬 인터프리터가_ 처리하는 하나의 문장을 의미합니다. 
+파이썬은 각각의 _물리적 줄_이 _논리적 줄_과 같다는 가정, 즉 사람 눈에 보이는 한 줄이 파이썬에서의 한 문장과 같다는 가정 하에 프로그램을 처리합니다.
 
-An example of a logical line is a statement like `print 'hello world'` - if this was on a line by itself (as you see it in an editor), then this also corresponds to a physical line.
+논리적 줄의 예시로는 `print('hello world')`를 들 수 있는데, 만약 이 문장이 텍스트 편집기에서 한 줄에 있었다면 이 논리적 줄은 하나의 물리적 줄과 대응한다고 할 수 있습니다.
 
-Implicitly, Python encourages the use of a single statement per line which makes code more readable.
-
-If you want to specify more than one logical line on a single physical line, then you have to explicitly specify this using a semicolon (`;`) which indicates the end of a logical line/statement. For example:
+파이썬은 암묵적으로 한 줄에 단 하나의 문장만 사용해서 코드의 가독성을 높이는 것을 권장하고 있습니다. 하나의 물리적 줄에 여러 개의 논리적 줄을 넣고 싶을 때는 논리적 줄의 끝을 의미하는 세미콜론 (`;`)을 사용합니다.
 
 ```python
 i = 5
@@ -376,7 +375,7 @@ Sometimes, there is an implicit assumption where you don't need to use a backsla
 
 ## 들여쓰기
 
-파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 이것을 _들여쓰기_라고 합니다. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
+파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 줄 앞에 적절한 수의 공백을 넣는 작업을 _들여쓰기_라고 합니다. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
 이것은 같은 블록에서 실행되는 _모든 문장이 똑같이 들여쓰기가 되어 있어야_ 한다는 것을 의미합니다. 들여쓰기를 제대로 하지 않으면 프로그램을 실행할 때 오류가 발생할 수 있습니다.
 
 ```python
