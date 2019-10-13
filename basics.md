@@ -31,7 +31,7 @@ print('hello world')
 
 `5`, `1.23`, `'This is a string'`, `"It's a string!"`처럼 절대 변하지 않는 데이터 그 자체를 리터럴 (literal)이라고 부릅니다.
 
-리터럴([literal](https://dictionary.cambridge.org/dictionary/english/literal))은 영어로 '글자 그대로의'라는 뜻으로, _글자 그대로_ 값을 사용하기 때문에 붙은 이름입니다. 예를 들어, 숫자 `2`는 항상 2라는 값을 나타내고 절대로 변하지 않습니다.
+리터럴([literal](https://dictionary.cambridge.org/dictionary/english/literal))은 영어로 **글자 그대로의**라는 뜻으로, _글자 그대로_ 값을 사용하기 때문에 붙은 이름입니다. 예를 들어, 숫자 `2`는 항상 2라는 값을 나타내고 절대로 변하지 않습니다.
 
 > **참고: 다른 프로그래밍 언어에서 배우는 상수 (constant)와 리터럴의 차이점은 다음과 같습니다.**
 > - 상수는 정의한 다음에 그 값을 지정해주어야 합니다.
@@ -138,7 +138,7 @@ print('{name} was {age} years old when he wrote this book'.format(name=name, age
 print('Why is {name} playing with that python?'.format(name=name))
 ```
 
-파이썬 3.6에서는 `format` 메소드를 사용하지 않아도 형식화가 자동으로 이루어지는 "f-문자열"이 추가되었습니다.
+파이썬 3.6에서는 `format` 메소드를 사용하지 않아도 자동으로 형식을 만들어주는 **f-문자열** 기능이 추가되었습니다.
 
 ```python
 age = 20
@@ -170,7 +170,7 @@ Swaroop wrote A Byte of Python
 
 ### `print` 함수
 
-`print` 함수를 사용할 때는 문자열 끝에 개행 문자 (`\n`)가 자동으로 추가된다는 것에 주의해야 합니다. 아래와 같이 문자열 끝에 들어갈 문자를 직접 지정해서 개행 문자가 추가되는 것을 막을 수 있습니다.
+`print` 함수를 사용할 때는 문자열 끝에 줄넘김(`\n`)이 자동으로 추가된다는 것을 기억해야 합니다. 줄넘김을 원하지 않는다면 아래 코드와 같이 문자열 끝에 들어갈 문자를 직접 지정해 줄이 넘어가지 않도록 할 수 있습니다.
 
 ```python
 print('a', end='')
@@ -184,28 +184,30 @@ print('c')
 ab c
 ```
 
-### 제어 문자
+### 이스케이프 문자
 
-Suppose, you want to have a string which contains a single quote (`'`), how will you specify this string? For example, the string is `"What's your name?"`. You cannot specify `'What's your name?'` because Python will be confused as to where the string starts and ends. So, you will have to specify that this single quote does not indicate the end of the string. This can be done with the help of what is called an _escape sequence_. You specify the single quote as `\'` : notice the backslash. Now, you can specify the string as `'What\'s your name?'`.
+만약 작은 따옴표(`'`)가 포함된 문구를 출력해야 한다고 생각해봅시다. 예를 들어 **'What's your name?'** 라는 문장이 있다고 하면 파이썬은 중간의 작은 따옴표가 문장의 끝이라고 생각해 오류를 표시합니다. 이런 오류를 피하기 위해서 우리는 *이스케이프 문자*를 사용해야 합니다. 파이썬은 이스케이프 문자로 백슬래쉬(`\`)를 사용하며 위의 경우 **'What\'s your name?'** 로 표기할 수 있습니다.
 
-Another way of specifying this specific string would be `"What's your name?"` i.e. using double quotes. Similarly, you have to use an escape sequence for using a double quote itself in a double quoted string. Also, you have to indicate the backslash itself using the escape sequence `\\`.
+이스케이프 문자를 사용하지 않는 다른 방법으로 쌍 따옴표(`"`)를 사용할 수도 있습니다. **"What's your name?"** 이렇게 표현하면 파이썬이 문장의 끝이 어디인지 알 수 있습니다. 또한 백슬래쉬를 출력해야 하면 `\\`처럼 표현해야 파이썬에서 오류가 발생하지 않습니다.
 
-What if you wanted to specify a two-line string? One way is to use a triple-quoted string as shown [previously](#triple-quotes) or you can use an escape sequence for the newline character - `\n` to indicate the start of a new line. An example is:
+문장이 두 줄로 출력되게 하려면 어떻게 해야 할까요? 하나의 방법은 이미 앞에서 배운 [따옴표 3개](#triple-quotes)를 사용하는 것입니다. 또다른 방법으로는 문장에 줄넘김 문자(`\n`)를 넣는 것입니다.
+
+예를 들면 이렇게 말이죠.
 
 ```python
 'This is the first line\nThis is the second line'
 ```
 
-Another useful escape sequence to know is the tab: `\t`. There are many more escape sequences but I have mentioned only the most useful ones here.
+또 다른 유용한 이스케이프 문자에는 들여쓰기(tab; `\t`)가 있습니다. 이외에도 다양한 이스케이프 문자들이 있지만 여기에서는 가장 많이 사용되는 것만 알아보았습니다.
 
-One thing to note is that in a string, a single backslash at the end of the line indicates that the string is continued in the next line, but no newline is added. For example:
+문자열 출력에서 또 하나 알아두어야 할 것은 하나의 백슬래쉬(`\`)를 사용해 긴 문자열을 짧게 표현 할 수 있다는 것입니다. 예를 들어 다음의 코드는
 
 ```python
 "This is the first sentence. \
 This is the second sentence."
 ```
 
-is equivalent to
+아래의 코드와 동일합니다.
 
 ```python
 "This is the first sentence. This is the second sentence."
