@@ -102,8 +102,8 @@ You can find more information about PyCharm in the [PyCharm Quickstart](https://
 ## Vim 설치하기
 
 1. 먼저 [Vim](http://www.vim.org)을 설치하세요.
-    * Mac OS X를 사용하고 계시다면 [HomeBrew](http://brew.sh/)로 `macvim`을 설치해야 합니다.
-    * Windows users should download the "self-installing executable" from [Vim website](http://www.vim.org/download.php)
+    * Mac OS X를 사용하는 경우, [HomeBrew](http://brew.sh/)로 `macvim`을 설치해야 합니다.
+    * Windows를 사용하는 경우, [Vim 웹사이트](http://www.vim.org/download.php)에서 설치 파일을 다운로드해야 합니다.
     * GNU/Linux users should get Vim from their distribution's software repositories, e.g. Debian and Ubuntu users can install the `vim` package.
 2. Install [jedi-vim](https://github.com/davidhalter/jedi-vim) plugin for autocompletion.
 3. Install corresponding `jedi` python package : `pip install -U jedi`
@@ -118,9 +118,7 @@ You can find more information about PyCharm in the [PyCharm Quickstart](https://
 
 ## 소스 코드로 프로그램 실행하기
 
-Now let's get back to programming. There is a tradition that whenever you learn a new programming language, the first program that you write and run is the 'hello world' program - all it does is just say 'hello world' when you run it. As Simon Cozens[^1] says, it is the "traditional incantation to the programming gods to help you learn the language better."
-
-좋은 텍스트 편집기도 설치했으니 다시 프로그래밍에 대한 설명을 이어가도록 하겠습니다. 프로그래밍 언어를 배울 때 사용하는 첫 번째 예제로 'hello world'를 화면에 출력하는 프로그램을 제시하는 것은 프로그래밍 언어에 대한 유명한 전통으로 알려져 있으며, 유명한 Perl 프로그래머인 사이먼 코젠스[^1]는 이 예제에 대해 "프로그래밍의 신들을 소환해서 프로그래밍 언어를 제대로 배울 수 있게 도와주는 유서 깊은 주문"라고 말하기도 했습니다.
+좋은 텍스트 편집기도 설치했으니 다시 프로그래밍에 대한 설명을 이어가도록 하겠습니다. 프로그래밍 언어를 배울 때 사용하는 첫 번째 예제로 'hello world'를 화면에 출력하는 프로그램을 제시하는 것은 프로그래밍 언어에 대한 유명한 전통으로 알려져 있으며, 유명한 Perl 프로그래머인 사이먼 코젠스[^1]는 이 예제에 대해 "외우는 순간 프로그래밍의 신들이 나타나 프로그래밍 언어를 제대로 배울 수 있게 도와주는 유서 깊은 마법의 주문"라고 말하기도 했습니다.
 
 Start your choice of editor, enter the following program and save it as `hello.py`.
 
