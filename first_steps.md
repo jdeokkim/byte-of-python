@@ -50,10 +50,7 @@ Windows의 `명령 프롬프트`에서는 `[ctrl + z]` 키를 누른 다음, `[e
 
 Windows 운영 체제를 사용하고 있다면, *제발 메모장은 사용하지 말아주세요*. 프로그램을 작성할 때 메모장을 사용하는 것이 좋지 않은 이유는 좋은 텍스트 편집기들과 달리 메모장에는 구문 강조 기능이 없으며 들여쓰기를 제대로 할 수 없기 때문입니다. 파이썬에서 소스 코드의 들여쓰기가 무엇이고 왜 중요한지에 대해서는 이후에 배우도록 하겠습니다.
 
-If you are an experienced programmer, then you must be already using [Vim](http://www.vim.org) or [Emacs](http://www.gnu.org/software/emacs/). Needless to say, these are two of the most powerful editors and you will benefit from using them to write your Python programs. I personally use both for most of my programs, and have even written an [entire book on Vim]({{ book.vimBookUrl }}).
-
-GNU/Linux 운영 체제에서 프로그램을 짜본 경험이 있다면, [Vim](http://www.vim.org)이나 [Emacs](http://www.gnu.org/software/emacs/) 같은 텍스트 편집기를 써본 적이 있을 겁니다.
-Vim과 Emacs는 GNU/Linux 환경에서 상당히 좋은 텍스트 편집기로, 파이썬 프로그램을 편리하게 작성하는 데에 도움을 줄 수 있습니다. 저는 개인적으로 Vim과 Emacs를 둘 다 사용하는데, 특히 Vim은 [Vim 사용법에 대한 책]({{ book.vimBookUrl }})도 하나 쓴 적이 있죠!
+GNU/Linux 운영 체제에서 프로그램을 짜본 경험이 있다면, [Vim](http://www.vim.org)이나 [Emacs](http://www.gnu.org/software/emacs/) 같은 텍스트 편집기를 써본 적이 있을 겁니다. Vim과 Emacs는 GNU/Linux 환경에서 상당히 좋은 텍스트 편집기로, 파이썬 프로그램을 편리하게 작성하는 데에 도움을 줄 수 있습니다. 저는 개인적으로 Vim과 Emacs를 둘 다 사용하는데, 특히 Vim은 [Vim 사용법에 대한 책]({{ book.vimBookUrl }})도 하나 쓴 적이 있죠!
 
 혹시 Vim이나 Emacs를 배울 생각이 있으시다면, 나중에 도움이 많이 되기 때문에 꼭 둘 중에 하나를 배우시는 것을 추천합니다. 그렇지만 아까 말했듯이 파이썬을 처음 배우시는 분들이라면 PyCharm으로 프로그램을 작성하면서 파이썬의 기본기를 다진 후에 Vim이나 Emacs 사용법을 배우는 것도 괜찮습니다.
 
@@ -123,6 +120,8 @@ You can find more information about PyCharm in the [PyCharm Quickstart](https://
 
 Now let's get back to programming. There is a tradition that whenever you learn a new programming language, the first program that you write and run is the 'hello world' program - all it does is just say 'hello world' when you run it. As Simon Cozens[^1] says, it is the "traditional incantation to the programming gods to help you learn the language better."
 
+좋은 텍스트 편집기도 설치했으니 다시 프로그래밍에 대한 설명을 이어가도록 하겠습니다. 프로그래밍 언어를 배울 때 사용하는 첫 번째 예제로 'hello world'를 화면에 출력하는 프로그램을 제시하는 것은 프로그래밍 언어에 대한 유명한 전통으로 알려져 있으며, 유명한 Perl 프로그래머인 사이먼 코젠스[^1]는 이 예제에 대해 "프로그래밍의 신들을 소환해서 프로그래밍 언어를 제대로 배울 수 있게 도와주는 유서 깊은 주문"라고 말하기도 했습니다.
+
 Start your choice of editor, enter the following program and save it as `hello.py`.
 
 If you are using PyCharm, we have already [discussed how to run from a source file](#pycharm).
@@ -168,9 +167,7 @@ In case you got an error, please type the above program _exactly_ as shown above
 
 ## 도움말 보기
 
-If you need quick information about any function or statement in Python, then you can use the built-in `help` functionality. This is very useful especially when using the interpreter prompt. For example, run `help('len')` - this displays the help for the `len` function which is used to count number of items.
-
-TIP: Press `q` to exit the help.
+파이썬에서 함수나 문장에 대한 설명을 빠르게 확인하고 싶을 때는, 파이썬에 내장된 `help` 기능을 사용할 수 있습니다. 이 기능은 파이썬 인터프리터를 사용하고 있을 때 특히 유용한 기능입니다. 예를 들어, 파이썬 인터프리터에서 `help('len')`를 입력하면 원소의 개수를 세는 `len` 함수에 대한 도움말을 읽을 수 있으며,  `q`를 입력하면 도움말 화면을 닫을 수 있습니다.
 
 Similarly, you can obtain information about almost anything in Python. Use `help()` to learn more about using `help` itself!
 
