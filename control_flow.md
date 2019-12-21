@@ -12,11 +12,9 @@ Example (save as `if.py`):
 
 <!-- Tags expansion does not happen inside code blocks https://github.com/GitbookIO/gitbook/issues/707 -->
 <pre><code class="lang-python">{% include "./programs/if.py" %}</code></pre>
-
 Output:
 
 <pre><code>{% include "./programs/if.txt" %}</code></pre>
-
 **How It Works**
 
 In this program, we take guesses from the user and check if it is the number that we have. We set the variable `number` to any integer we want, say `23`. Then, we take the user's guess using the `input()` function. Functions are just reusable pieces of programs. We'll read more about them in the [next chapter](./functions.md#functions).
@@ -55,11 +53,9 @@ The `while` statement allows you to repeatedly execute a block of statements as 
 Example (save as `while.py`):
 
 <pre><code class="lang-python">{% include "./programs/while.py" %}</code></pre>
-
 Output:
 
 <pre><code>{% include "./programs/while.txt" %}</code></pre>
-
 **How It Works**
 
 In this program, we are still playing the guessing game, but the advantage is that the user is allowed to keep guessing until he guesses correctly - there is no need to repeatedly run the program for each guess, as we have done in the previous section. This aptly demonstrates the use of the `while` statement.
@@ -81,11 +77,9 @@ The `for..in` statement is another looping statement which *iterates* over a seq
 Example (save as `for.py`):
 
 <pre><code class="lang-python">{% include "./programs/for.py" %}</code></pre>
-
 Output:
 
 <pre><code>{% include "./programs/for.txt" %}</code></pre>
-
 **How It Works**
 
 In this program, we are printing a *sequence* of numbers. We generate this sequence of numbers using the built-in `range` function.
@@ -115,11 +109,9 @@ An important note is that if you *break* out of a `for` or `while` loop, any cor
 Example (save as `break.py`):
 
 <pre><code class="lang-python">{% include "./programs/break.py" %}</code></pre>
-
 Output:
 
 <pre><code>{% include "./programs/break.txt" %}</code></pre>
-
 **How It Works**
 
 In this program, we repeatedly take the user's input and print the length of each input each
@@ -148,11 +140,9 @@ The `continue` statement is used to tell Python to skip the rest of the statemen
 Example (save as `continue.py`):
 
 <pre><code class="lang-python">{% include "./programs/continue.py" %}</code></pre>
-
 Output:
 
 <pre><code>{% include "./programs/continue.txt" %}</code></pre>
-
 **How It Works**
 
 In this program, we accept input from the user, but we process the input string only if it is at least 3 characters long. So, we use the built-in `len` function to get the length and if the length is less than 3, we skip the rest of the statements in the block by using the `continue` statement. Otherwise, the rest of the statements in the loop are executed, doing any kind of processing we want to do here.
