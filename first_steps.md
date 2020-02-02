@@ -100,19 +100,19 @@ PyCharm의 자세한 사용법에 대해 더 알고 싶다면 [PyCharm 퀵 스�
 ## Vim 설치하기
 
 1. 먼저 [Vim](http://www.vim.org)을 설치하세요.
-    * Mac OS X를 사용하는 경우, [HomeBrew](http://brew.sh/)로 `macvim`을 설치해야 합니다.
-    * Windows를 사용하는 경우, [Vim 웹사이트](http://www.vim.org/download.php)에서 설치 파일을 다운로드해야 합니다.
-    * GNU/Linux users should get Vim from their distribution's software repositories, e.g. Debian and Ubuntu users can install the `vim` package.
-2. Install [jedi-vim](https://github.com/davidhalter/jedi-vim) plugin for autocompletion.
-3. Install corresponding `jedi` python package : `pip install -U jedi`
+    * Mac OS X를 사용하시는 경우, [HomeBrew](http://brew.sh/)로 `macvim`을 설치하세요.
+    * Windows를 사용하시는 경우, [Vim 웹사이트](http://www.vim.org/download.php)에서 설치 파일을 다운로드하실 수 있습니다.
+    * GNU/Linux를 사용하시는 경우, 리눅스 배포판의 소프트웨어 저장소에서 Vim을 다운로드하세요. 
+2. 자동 완성 기능을 사용하기 위해 [jedi-vim](https://github.com/davidhalter/jedi-vim) 플러그인을 설치하세요.
+3. `명령 프롬프트`나 `터미널`에서 `pip install -U jedi`를 입력하여 `jedi` 파이썬 패키지를 설치하세요.
 
 ## Emacs 설치하기
 
-1. Install [Emacs 24+](http://www.gnu.org/software/emacs/).
-    * Mac OS X users should get Emacs from http://emacsformacosx.com
-    * Windows users should get Emacs from http://ftp.gnu.org/gnu/emacs/windows/
-    * GNU/Linux users should get Emacs from their distribution's software repositories, e.g. Debian and Ubuntu users can install the `emacs24` package.
-2. Install [ELPY](https://github.com/jorgenschaefer/elpy/wiki)
+1. 먼저 [Emacs 24 이상의 버전](http://www.gnu.org/software/emacs/)을 설치하세요.
+    * Mac OS X를 사용하시는 경우, http://emacsformacosx.com에서 설치 파일을 다운로드하세요.
+    * Windows를 사용하시는 경우, http://ftp.gnu.org/gnu/emacs/windows/에서 설치 파일을 다운로드하실 수 있습니다.
+    * GNU/Linux를 사용하시는 경우, 리눅스 배포판의 소프트웨어 저장소에서 Emacs를 다운로드하세요.
+2. 자동 완성 기능을 사용하기 위해 [ELPY](https://github.com/jorgenschaefer/elpy/wiki) Emacs 패키지를 설치하세요.
 
 ## 소스 코드로 프로그램 실행하기
 

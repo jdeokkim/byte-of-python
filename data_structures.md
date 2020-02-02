@@ -1,4 +1,4 @@
-# Data Structures {#data-structures}
+# 자료 구조 {#data-structures}
 
 자료 구조는 말 그대로 *자료*를 담을 수 있는 *구조*를 가진 것을 뜻하며, 비슷한 성격의 데이터 여러 개를 저장할 때 주로 사용됩니다.
 
@@ -23,11 +23,9 @@ A class can also have *fields* which are nothing but variables defined for use w
 Example (save as `ds_using_list.py`):
 
 <pre><code class="lang-python">{% include "./programs/ds_using_list.py" %}</code></pre>
-
 Output:
 
 <pre><code>{% include "./programs/ds_using_list.txt" %}</code></pre>
-
 **How It Works**
 
 The variable `shoplist` is a shopping list for someone who is going to the market. In `shoplist`, we only store strings of the names of the items to buy but you can add _any kind of object_ to a list including numbers and even other lists.
@@ -55,11 +53,9 @@ Tuples are usually used in cases where a statement or a user-defined function ca
 Example (save as `ds_using_tuple.py`):
 
 <pre><code class="lang-python">{% include "./programs/ds_using_tuple.py" %}</code></pre>
-
 Output:
 
 <pre><code>{% include "./programs/ds_using_tuple.txt" %}</code></pre>
-
 **How It Works**
 
 The variable `zoo` refers to a tuple of items. We see that the `len` function can be used to get the length of the tuple. This also indicates that a tuple is a [sequence](#sequence) as well.
@@ -93,11 +89,9 @@ The dictionaries that you will be using are instances/objects of the `dict` clas
 Example (save as `ds_using_dict.py`):
 
 <pre><code class="lang-python">{% include "./programs/ds_using_dict.py" %}</code></pre>
-
 Output:
 
 <pre><code>{% include "./programs/ds_using_dict.txt" %}</code></pre>
-
 **How It Works**
 
 We create the dictionary `ab` using the notation already discussed. We then access key-value pairs by specifying the key using the indexing operator as discussed in the context of lists and tuples. Observe the simple syntax.
@@ -127,11 +121,9 @@ The three types of sequences mentioned above - lists, tuples and strings, also h
 Example (save as `ds_seq.py`):
 
 <pre><code class="lang-python">{% include "./programs/ds_seq.py" %}</code></pre>
-
 Output:
 
 <pre><code>{% include "./programs/ds_seq.txt" %}</code></pre>
-
 **How It Works**
 
 First, we see how to use indexes to get individual items of a sequence. This is also referred to as the _subscription operation_. Whenever you specify a number to a sequence within square brackets as shown above, Python will fetch you the item corresponding to that position in the sequence. Remember that Python starts counting numbers from 0. Hence, `shoplist[0]` fetches the first item and `shoplist[3]` fetches the fourth item in the `shoplist` sequence.
@@ -198,11 +190,9 @@ Generally, you don't need to be worried about this, but there is a subtle effect
 Example (save as `ds_reference.py`):
 
 <pre><code class="lang-python">{% include "./programs/ds_reference.py" %}</code></pre>
-
 Output:
 
 <pre><code>{% include "./programs/ds_reference.txt" %}</code></pre>
-
 **How It Works**
 
 Most of the explanation is available in the comments.
@@ -222,11 +212,9 @@ The strings that you use in programs are all objects of the class `str`.  Some u
 Example (save as `ds_str_methods.py`):
 
 <pre><code class="lang-python">{% include "./programs/ds_str_methods.py" %}</code></pre>
-
 Output:
 
 <pre><code>{% include "./programs/ds_str_methods.txt" %}</code></pre>
-
 **How It Works**
 
 Here, we see a lot of the string methods in action. The `startswith` method is used to find out whether the string starts with the given string. The `in` operator is used to check if a given string is a part of the string.
