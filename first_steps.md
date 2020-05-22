@@ -87,7 +87,7 @@ GNU/Linux 운영 체제에서 프로그램을 짜본 경험이 있다면, [Vim](
 ```python
 print("hello world")
 ```
-작성한 코드를 전체 선택하고, 오른쪽 클릭 메뉴에서 `Run 'hello'`를 클릭하세요.
+작성한 코드를 전체 선택하고, 오른쪽 클릭한 다음 메뉴에서 `Run 'hello'`를 클릭하세요.
 
 ![Run 'hello'를 클릭해 프로그램 실행하기](./img/pycharm_run.png)
 
@@ -100,23 +100,23 @@ PyCharm의 자세한 사용법에 대해 더 알고 싶다면 [PyCharm 퀵 스�
 ## Vim 설치하기
 
 1. 먼저 [Vim](http://www.vim.org)을 설치하세요.
-    * Mac OS X를 사용하는 경우, [HomeBrew](http://brew.sh/)로 `macvim`을 설치해야 합니다.
-    * Windows를 사용하는 경우, [Vim 웹사이트](http://www.vim.org/download.php)에서 설치 파일을 다운로드해야 합니다.
-    * GNU/Linux users should get Vim from their distribution's software repositories, e.g. Debian and Ubuntu users can install the `vim` package.
-2. Install [jedi-vim](https://github.com/davidhalter/jedi-vim) plugin for autocompletion.
-3. Install corresponding `jedi` python package : `pip install -U jedi`
+    * Mac OS X를 사용하시는 경우, [HomeBrew](http://brew.sh/)로 `macvim`을 설치하세요.
+    * Windows를 사용하시는 경우, [Vim 웹사이트](http://www.vim.org/download.php)에서 설치 파일을 다운로드하실 수 있습니다.
+    * GNU/Linux를 사용하시는 경우, 리눅스 배포판의 소프트웨어 저장소에서 Vim을 다운로드하세요. 
+2. 자동 완성 기능을 사용하기 위해 [jedi-vim](https://github.com/davidhalter/jedi-vim) 플러그인을 설치하세요.
+3. `명령 프롬프트`나 `터미널`에서 `pip install -U jedi`를 입력하여 `jedi` 파이썬 패키지를 설치하세요.
 
 ## Emacs 설치하기
 
-1. Install [Emacs 24+](http://www.gnu.org/software/emacs/).
-    * Mac OS X users should get Emacs from http://emacsformacosx.com
-    * Windows users should get Emacs from http://ftp.gnu.org/gnu/emacs/windows/
-    * GNU/Linux users should get Emacs from their distribution's software repositories, e.g. Debian and Ubuntu users can install the `emacs24` package.
-2. Install [ELPY](https://github.com/jorgenschaefer/elpy/wiki)
+1. 먼저 [Emacs 24 이상의 버전](http://www.gnu.org/software/emacs/)을 설치하세요.
+    * Mac OS X를 사용하시는 경우, http://emacsformacosx.com에서 설치 파일을 다운로드하세요.
+    * Windows를 사용하시는 경우, http://ftp.gnu.org/gnu/emacs/windows/에서 설치 파일을 다운로드하실 수 있습니다.
+    * GNU/Linux를 사용하시는 경우, 리눅스 배포판의 소프트웨어 저장소에서 Emacs를 다운로드하세요.
+2. 자동 완성 기능을 사용하기 위해 [ELPY](https://github.com/jorgenschaefer/elpy/wiki) Emacs 패키지를 설치하세요.
 
 ## 소스 코드로 프로그램 실행하기
 
-좋은 텍스트 편집기도 설치했으니 다시 프로그래밍에 대한 설명을 이어가도록 하겠습니다. 프로그래밍 언어를 배울 때 사용하는 첫 번째 예제로 'hello world'를 화면에 출력하는 프로그램을 제시하는 것은 프로그래밍 언어에 대한 유명한 전통으로 알려져 있으며, 유명한 Perl 프로그래머인 사이먼 코젠스[^1]는 이 예제에 대해 "외우는 순간 프로그래밍의 신들이 나타나 프로그래밍 언어를 제대로 배울 수 있게 도와주는, 유서 깊은 마법의 주문"라고 말하기도 했습니다.
+좋은 텍스트 편집기도 설치했으니 다시 프로그래밍에 대한 설명을 이어가도록 하겠습니다. 프로그래밍 세계에서는 한 가지 유명한 전통이 있는데, 바로 프로그래밍 언어를 배울 때는 'hello world'를 화면에 출력하는 프로그램을 제일 먼저 만들어 보아야 한다는 것입니다.  유명한 Perl 프로그래머인 사이먼 코젠스[^1]는 이 프로그램에 대해 "외우는 순간 프로그래밍의 신들이 나타나 프로그래밍 언어를 제대로 배울 수 있게 도와주는, 유서 깊은 마법의 주문"라고 말하기도 했습니다.
 
 텍스트 편집기를 실행하고, 아래의 프로그램을 작성하여 `hello.py`라는 이름으로 저장하세요.
 
@@ -124,23 +124,21 @@ PyCharm의 자세한 사용법에 대해 더 알고 싶다면 [PyCharm 퀵 스�
 print("hello world")
 ```
 
-Where should you save the file? To any folder for which you know the location of the folder. If you
-don't understand what that means, create a new folder and use that location to save and run all
-your Python programs:
+프로그램을 어디에 저장해야 할지 모르시겠다고요? 폴더의 위치를 정확히 알고 계신다면, 어느 폴더에 저장하든지 상관은 없습니다. 혹시 프로그램을 어느 폴더에 저장해야 할지 아직도 고민하고 계시다면, 여기에 저장하시는 것도 괜찮을 것 같네요!
 
-- `/tmp/py` on Mac OS X
-- `/tmp/py` on GNU/Linux
-- `C:\py` on Windows
+- Mac OS X: `/tmp/py`
+- GNU/Linux: `/tmp/py`
+- Windows: `C:\py`
 
-To create the above folder (for the operating system you are using), use the `mkdir` command in the terminal, for example, `mkdir /tmp/py`.
+새 폴더를 만들려면, `명령 프롬프트`나 `터미널`에서 `mkdir` 명령어를 사용하시면 됩니다. (예시: `mkdir /tmp/py`)
 
-IMPORTANT: Always ensure that you give it the file extension of `.py`, for example, `foo.py`.
+프로그램을 저장할 때는 `foo.py`처럼 **반드시 파일 확장자가 `.py`인지 확인**해주세요.
 
-To run your Python program:
+이제 파이썬 프로그램을 실행해보도록 하겠습니다.
 
-1. Open a terminal window (see the previous [Installation](./installation.md#installation) chapter on how to do that)
+1. `명령 프롬프트` 또는 `터미널` 창을 실행하세요. (어떻게 실행하는지 기억이 잘 안 나신다면, [파이썬 설치하기](./installation.md) 장을 참고해주세요)
 2. **C**hange **d**irectory to where you saved the file, for example, `cd /tmp/py`
-3. Run the program by entering the command `python hello.py`. The output is as shown below.
+3. `명령 프롬프트` 또는 `터미널` 창에 `python hello.py`를 입력하세요. 프로그램의 실행 결과는 아래와 같습니다.
 
 ```
 $ python hello.py
@@ -153,9 +151,9 @@ If you got the output as shown above, congratulations! - you have successfully r
 
 In case you got an error, please type the above program _exactly_ as shown above and run the program again. Note that Python is case-sensitive i.e. `print` is not the same as `Print` - note the lowercase `p` in the former and the uppercase `P` in the latter. Also, ensure there are no spaces or tabs before the first character in each line - we will see [why this is important](./basics.md#indentation) later.
 
-**How It Works**
+**프로그램 설명**
 
-파이썬 프로그램은 여러 개의 _문장 (statement)_로 이루어져 있습니다. 방금 작성한 프로그램은 하나의 문장으로 이루어져 있는데, 이 `print` _문장_은 텍스트 "hello world"를 받아서 화면에 출력하는 기능을 합니다.
+파이썬 프로그램은 여러 개의 _문장 (statement)_로 이루어져 있습니다. 방금 작성한 프로그램은 하나의 문장으로 이루어져 있는데, 이 `print` _문장_은 텍스트 "hello world"를 받아서 화면에 출력하는 기능을 수행합니다.
 
 ## 도움말 보기
 
@@ -167,7 +165,7 @@ In case you got an error, please type the above program _exactly_ as shown above
 
 이번 장에서는 파이썬 프로그램의 기본 작성 방법, 저장 방법과 실행 방법을 알아보았습니다.
 
-이제 파이썬의 기초를 쌓아보도록 하겠습니다.
+이제 파이썬의 기본기를 다져보도록 합시다.
 
 ---
 
