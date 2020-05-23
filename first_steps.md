@@ -147,9 +147,9 @@ hello world
 
 ![`명령 프롬프트` 또는 `터미널` 창에서 프로그램 실행하기](./img/terminal_screenshot.png)
 
-If you got the output as shown above, congratulations! - you have successfully run your first Python program. You have successfully crossed the hardest part of learning programming, which is, getting started with your first program!
+프로그램의 실행 결과가 위와 같이 나왔다고요? 첫 번째 파이썬 프로그램을 성공적으로 실행하신 것을 축하드립니다! 프로그래밍을 배울 때 가장 어려운 부분이 바로 첫 번째 프로그램을 만드는 것이라고 하는데, 정말 잘하셨습니다!
 
-In case you got an error, please type the above program _exactly_ as shown above and run the program again. Note that Python is case-sensitive i.e. `print` is not the same as `Print` - note the lowercase `p` in the former and the uppercase `P` in the latter. Also, ensure there are no spaces or tabs before the first character in each line - we will see [why this is important](./basics.md#indentation) later.
+혹시 프로그램이 제대로 실행되지 않고 오류가 발생한다면, 위에 나온 프로그램의 소스 코드를 그대로 입력하였는지 확인해주세요. 파이썬에서는 대소문자를 구분하기 때문에 첫 글자가 각각 소문자와 대문자인 `print`와  `Print`를 다르게 취급합니다. 또한 각 줄의 맨 앞에 공백이나 탭 문자가 없는지도 확인해야 합니다. 이것에 대한 자세한 내용은 [파이썬 기초 지식](./basics.md)에서 다루도록 하겠습니다.
 
 **프로그램 설명**
 
