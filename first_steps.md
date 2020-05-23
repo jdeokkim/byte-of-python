@@ -30,7 +30,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 hello world
 ```
 
-Notice that Python gives you the output of the line immediately! What you just entered is a single Python _statement_. We use `print` to (unsurprisingly) print any value that you supply to it. Here, we are supplying the text `hello world` and this is promptly printed to the screen.
+파이썬이 프로그램의 실행 결과를 바로 보여주는 것을 확인할 수 있습니다! 방금 입력한 것을 하나의 파이썬 _문장_이라고 하는데, 여기서 `print`는 소괄호 안에 주어진 값을 화면에 출력하는 역할을 합니다. 이 프로그램에서는 `hello world`라는 문자열을 `print`에 전달하여, 화면에 그 내용을 출력합니다.
 
 ### 파이썬 인터프리터 종료하기
 
@@ -137,7 +137,7 @@ print("hello world")
 이제 파이썬 프로그램을 실행해보도록 하겠습니다.
 
 1. `명령 프롬프트` 또는 `터미널` 창을 실행하세요. (어떻게 실행하는지 기억이 잘 안 나신다면, [파이썬 설치하기](./installation.md) 장을 참고해주세요)
-2. **C**hange **d**irectory to where you saved the file, for example, `cd /tmp/py`
+2. `cd /tmp/py`와 같이, `cd` (**c**hange **d**irectory) 명령어를 사용해서 프로그램이 저장되어 있는 위치로 이동하세요.
 3. `명령 프롬프트` 또는 `터미널` 창에 `python hello.py`를 입력하세요. 프로그램의 실행 결과는 아래와 같습니다.
 
 ```
@@ -145,7 +145,7 @@ $ python hello.py
 hello world
 ```
 
-![Screenshot of running program in terminal](./img/terminal_screenshot.png)
+![`명령 프롬프트` 또는 `터미널` 창에서 프로그램 실행하기](./img/terminal_screenshot.png)
 
 If you got the output as shown above, congratulations! - you have successfully run your first Python program. You have successfully crossed the hardest part of learning programming, which is, getting started with your first program!
 
