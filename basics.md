@@ -186,9 +186,9 @@ ab c
 
 ### 이스케이프 문자
 
-만약 작은 따옴표(`'`)가 포함된 문구를 출력해야 한다고 생각해봅시다. 예를 들어 **'What's your name?'** 라는 문장이 있다고 하면 파이썬은 중간의 작은 따옴표가 문장의 끝이라고 생각해 오류를 표시합니다. 이런 오류를 피하기 위해서 우리는 *이스케이프 문자*를 사용해야 합니다. 파이썬은 이스케이프 문자로 백슬래쉬(`\`)를 사용하며 위의 경우 **'What\'s your name?'** 로 표기할 수 있습니다.
+만약 작은 따옴표(`'`)가 포함된 문구를 출력해야 한다고 생각해봅시다. 예를 들어 **'What's your name?'** 라는 문장이 있다고 하면 파이썬은 중간의 작은 따옴표가 문장의 끝이라고 생각해 오류를 표시합니다. 이런 오류를 피하기 위해서 우리는 *이스케이프 문자*를 사용해야 합니다. 파이썬은 이스케이프 문자로 백슬래시(`\`)를 사용하며 위의 경우 **'What\'s your name?'** 로 표기할 수 있습니다.
 
-이스케이프 문자를 사용하지 않는 다른 방법으로 쌍 따옴표(`"`)를 사용할 수도 있습니다. **"What's your name?"** 이렇게 표현하면 파이썬이 문장의 끝이 어디인지 알 수 있습니다. 또한 백슬래쉬를 출력해야 하면 `\\`처럼 표현해야 파이썬에서 오류가 발생하지 않습니다.
+이스케이프 문자를 사용하지 않는 다른 방법으로 쌍 따옴표(`"`)를 사용할 수도 있습니다. **"What's your name?"** 이렇게 표현하면 파이썬이 문장의 끝이 어디인지 알 수 있습니다. 또한 백슬래시를 출력해야 하면 `\\`처럼 표현해야 파이썬에서 오류가 발생하지 않습니다.
 
 문장이 두 줄로 출력되게 하려면 어떻게 해야 할까요? 하나의 방법은 이미 앞에서 배운 [따옴표 3개](#triple-quotes)를 사용하는 것입니다. 또다른 방법으로는 문장에 줄넘김 문자(`\n`)를 넣는 것입니다.
 
@@ -215,19 +215,19 @@ This is the second sentence."
 
 ### 순수 문자열
 
-If you need to specify some strings where no special processing such as escape sequences are handled, then what you need is to specify a _raw_ string by prefixing `r` or `R` to the string. An example is:
+프로그램을 작성하다 보면 문자열 안의 이스케이프 문자를 처리하지 않고 그대로 사용하고 싶을 때가 있는데, 이럴 때 필요한 것이 바로 문자열 앞에 `r` 또는 `R`이 붙은 순수 문자열 (raw string)입니다.
 
 ```python
 r"Newlines are indicated by \n"
 ```
 
-> **정규 표현식을 사용하기 전 꼭 확인하세요**
+> **정규 표현식을 사용하기 전 꼭! 확인하세요!**
 > 
-> Always use raw strings when dealing with regular expressions. Otherwise, a lot of backwhacking may be required. For example, backreferences can be referred to as `'\\1'` or `r'\1'`.
+> 정규 표현식을 다룰 때에는 반드시 순수 문자열을 사용하세요. 순수 문자열을 사용하지 않을 경우 필요한 곳에 백슬래시를 일일이 넣어주어야 할 수도 있습니다. 예를 들어, 정규 표현식의 역참조는 `'\\1'` 또는 `r'\1'`와 같이 나타낼 수 있습니다.
 
 ## 변수
 
-프로그램을 작성할 때는 리터럴 상수 대신에 어떤 값을 저장도 할 수 있고 변경도 할 수 있는 무언가가 필요할 때가 있는데, 이것을 _변수_ (variable)라고 합니다. Variables are exactly what the name implies - their value can vary, i.e., you can store anything using a variable. Variables are just parts of your computer's memory where you store some information. Unlike literal constants, you need some method of accessing these variables and hence you give them names.
+프로그램을 작성할 때는 리터럴 상수 대신에 어떤 값을 저장도 할 수 있고 변경도 할 수 있는 무언가가 필요할 때가 있는데, 이것을 _변수_ (variable)라고 합니다. 변수는 이름에서 알 수 있듯이 그 값이 변할 수 있으며, 변수에는 어떤 값이든 저장할 수 있습니다. 사실 변수는 여러가지 정보가 저장되는 컴퓨터의 메모리 공간의 일부인데, 리터럴 상수와 다른 점은 변수에 접근할 때에는 그 변수에 붙은 고유한 이름을 사용한다는 것입니다.
 
 ## 식별자 규칙
 
