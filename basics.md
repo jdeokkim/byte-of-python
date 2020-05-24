@@ -23,7 +23,7 @@ print('hello world')
 - 문제 해결 중에 내린 중요한 결정이나 세부적인 내용을 설명할 필요가 있을 때
 - 프로그램을 짜다가 막히는 부분을 적어놓고 싶을 때
 
-[*Code tells you how, comments should tell you why*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
+[*"코드는 어떻게 하는지를 알려주지만, 주석은 왜 그렇게 하는지를 알려주어야 한다."*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html)
 
 주석은 작성한 프로그램을 다른 사람들이 보았을 때 그 내용을 쉽게 이해할 수 있도록 합니다. 프로그램을 몇 달 뒤에 다시 봤을 때 이해가 잘 안될 것 같으면 주석을 반드시 적어놓으세요.
 
@@ -378,8 +378,7 @@ Sometimes, there is an implicit assumption where you don't need to use a backsla
 
 ## 들여쓰기 (Indentation)
 
-파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 줄 앞에 적절한 수의 공백을 넣는 작업을 _들여쓰기_라고 합니다. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
-이것은 같은 블록에서 실행되는 _모든 문장이 똑같이 들여쓰기가 되어 있어야_ 한다는 것을 의미합니다. 들여쓰기를 제대로 하지 않으면 프로그램을 실행할 때 오류가 발생할 수 있습니다.
+파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 줄 앞에 적절한 수의 공백을 넣는 작업을 _들여쓰기_라고 합니다. 각각의 논리적 줄의 맨 앞에 있는 공백 (스페이스와 탭)은 그 줄의 들여쓰기 단계를 결정하며, 문장이 어느 블록에 속하는지를 결정하는 데에도 사용됩니다. 이것은 같은 블록에서 실행되는 _모든 문장이 똑같이 들여쓰기가 되어 있어야_ 한다는 것을 의미합니다. 들여쓰기를 제대로 하지 않으면 프로그램을 실행할 때 오류가 발생할 수 있습니다.
 
 ```python
 i = 5
