@@ -378,11 +378,11 @@ Sometimes, there is an implicit assumption where you don't need to use a backsla
 
 ## 들여쓰기 (Indentation)
 
-파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 줄 앞에 적절한 수의 공백을 넣는 작업을 _들여쓰기_라고 합니다. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
+파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 하나의 줄 앞에 적절한 수의 공백을 넣는 작업을 _들여쓰기_라고 합니다. 논리적 줄의 맨 앞의 공백 (스페이스와 탭)은 그 줄의 들여쓰기 단계를 결정하는 데에 사용되며, which in turn is used to determine the grouping of statements.
 
 This means that statements which go together must have the same indentation. Each such set of statements is called a block. We will see examples of how blocks are important in later chapters.
 
-코드를 작성할 때 들여쓰기를 제대로 하지 않으면 오류가 발생할 수 있습니다.
+코드를 작성할 때 들여쓰기를 제대로 하지 않으면 어떻게 되는지 한번 확인해봅시다.
 
 ```python
 i = 5
