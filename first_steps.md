@@ -6,7 +6,7 @@
 
 ## 파이썬 인터프리터로 프로그램 실행하기
 
-Windows에서는 `명령 프롬프트`, Mac OS X나 GNU/Linux에서는 `터미널` 또는 `gnome-terminal`을 실행한 다음, `python3`을 실행하고 `[enter]` 키를 누릅니다. (이전 장 `[파이썬 설치하기](./installation.md#installation)`를 참고하세요)
+Windows에서는 `명령 프롬프트`, Mac OS X나 GNU/Linux에서는 `터미널` 또는 `gnome-terminal`을 실행한 다음, `python3`을 실행하고 `[enter]` 키를 누릅니다. (이전 장 [파이썬 설치하기](./installation.md)를 참고하세요)
 
 파이썬을 실행하면, 까만 창에 `>>>`가 보이고 `>>>` 뒤부터 소스 코드를 입력할 수 있을 것입니다. 이것을 _파이썬 인터프리터_이라고 부릅니다.
 

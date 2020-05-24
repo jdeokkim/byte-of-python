@@ -2,7 +2,7 @@
 
 3장에서는 `hello world`만을 출력하는 간단한 프로그램을 만들어 보았지만, 이번에는 상수와 변수 같은 다양한 개념을 배워 보고 `hello world` 이외의 다른 문자열을 출력하는 방법을 배워보겠습니다.
 
-## 주석
+## 주석 (Comments)
 
 주석은 보통 `#` 뒤에 오는 문자열을 가리키며, 다른 사람들이 프로그램을 쉽게 이해할 수 있도록 하기 위해 사용합니다.
 
@@ -23,11 +23,11 @@ print('hello world')
 - 문제 해결 중에 내린 중요한 결정이나 세부적인 내용을 설명할 필요가 있을 때
 - 프로그램을 짜다가 막히는 부분을 적어놓고 싶을 때
 
-[*Code tells you how, comments should tell you why*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
+[*"코드는 어떻게 하는지를 알려주지만, 주석은 왜 그렇게 하는지를 알려주어야 한다."*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html)
 
 주석은 작성한 프로그램을 다른 사람들이 보았을 때 그 내용을 쉽게 이해할 수 있도록 합니다. 프로그램을 몇 달 뒤에 다시 봤을 때 이해가 잘 안될 것 같으면 주석을 반드시 적어놓으세요.
 
-## 리터럴
+## 리터럴 (Literal Constants)
 
 `5`, `1.23`, `'This is a string'`, `"It's a string!"`처럼 절대 변하지 않는 데이터 그 자체를 리터럴 (literal)이라고 부릅니다.
 
@@ -37,7 +37,7 @@ print('hello world')
 > - 상수는 정의한 다음에 그 값을 지정해주어야 합니다.
 > - 리터럴은 변수나 상수에 지정되거나 단독으로 쓰이는 값 그 자체를 말합니다.
 
-## 숫자
+## 숫자 (Numbers)
 
 파이썬에서 숫자는 `2` 같은 정수형와 `3.23`나 `52.3E-4`같은 실수형으로 나눌 수 있습니다.
 
@@ -47,7 +47,7 @@ print('hello world')
 > 
 > 파이썬 3에서 `long` 자료형은 존재하지 않으며, `int` 자료형에 모든 크기의 정수를 저장할 수 있습니다.
 
-## 문자열
+## 문자열 (Strings)
 
 문자열은 단어나 문장처럼 여러 개의 문자가 모인 것을 말합니다.
 
@@ -68,6 +68,7 @@ He said "Bond, James Bond."
 ```
 
 ### 문자열의 특성
+
 문자열은 한번 만들면 그 내용을 절대로 다시 변경할 수 없습니다. 처음에는 익숙하게 느껴지지 않을 수도 있겠지만, 
 이 책을 읽다 보면 이러한 문자열의 특성이 큰 문제가 되지 않는다는 것을 깨닫게 될 것입니다.
 
@@ -184,11 +185,11 @@ print('c')
 ab c
 ```
 
-### 이스케이프 문자
+### 이스케이프 문자 (Escape Sequences)
 
-만약 작은 따옴표(`'`)가 포함된 문구를 출력해야 한다고 생각해봅시다. 예를 들어 **'What's your name?'** 라는 문장이 있다고 하면 파이썬은 중간의 작은 따옴표가 문장의 끝이라고 생각해 오류를 표시합니다. 이런 오류를 피하기 위해서 우리는 *이스케이프 문자*를 사용해야 합니다. 파이썬은 이스케이프 문자로 백슬래쉬(`\`)를 사용하며 위의 경우 **'What\'s your name?'** 로 표기할 수 있습니다.
+만약 작은 따옴표(`'`)가 포함된 문구를 출력해야 한다고 생각해봅시다. 예를 들어 **'What's your name?'** 라는 문장이 있다고 하면 파이썬은 중간의 작은 따옴표가 문장의 끝이라고 생각해 오류를 표시합니다. 이런 오류를 피하기 위해서 우리는 *이스케이프 문자*를 사용해야 합니다. 파이썬은 이스케이프 문자로 백슬래시(`\`)를 사용하며 위의 경우 **'What\'s your name?'** 로 표기할 수 있습니다.
 
-이스케이프 문자를 사용하지 않는 다른 방법으로 쌍 따옴표(`"`)를 사용할 수도 있습니다. **"What's your name?"** 이렇게 표현하면 파이썬이 문장의 끝이 어디인지 알 수 있습니다. 또한 백슬래쉬를 출력해야 하면 `\\`처럼 표현해야 파이썬에서 오류가 발생하지 않습니다.
+이스케이프 문자를 사용하지 않는 다른 방법으로 쌍 따옴표(`"`)를 사용할 수도 있습니다. **"What's your name?"** 이렇게 표현하면 파이썬이 문장의 끝이 어디인지 알 수 있습니다. 또한 백슬래시를 출력해야 하면 `\\`처럼 표현해야 파이썬에서 오류가 발생하지 않습니다.
 
 문장이 두 줄로 출력되게 하려면 어떻게 해야 할까요? 하나의 방법은 이미 앞에서 배운 [따옴표 3개](#triple-quotes)를 사용하는 것입니다. 또다른 방법으로는 문장에 줄넘김 문자(`\n`)를 넣는 것입니다.
 
@@ -213,23 +214,23 @@ This is the second sentence."
 "This is the first sentence. This is the second sentence."
 ```
 
-### 순수 문자열
+### 순수 문자열 (Raw String)
 
-If you need to specify some strings where no special processing such as escape sequences are handled, then what you need is to specify a _raw_ string by prefixing `r` or `R` to the string. An example is:
+프로그램을 작성하다 보면 문자열 안의 이스케이프 문자를 처리하지 않고 그대로 사용하고 싶을 때가 있는데, 이럴 때 필요한 것이 바로 문자열 앞에 `r` 또는 `R`이 붙은 순수 문자열 (raw string)입니다.
 
 ```python
 r"Newlines are indicated by \n"
 ```
 
-> **정규 표현식을 사용하기 전 꼭 확인하세요**
+> **정규 표현식을 사용하기 전 꼭! 확인하세요!**
 > 
-> Always use raw strings when dealing with regular expressions. Otherwise, a lot of backwhacking may be required. For example, backreferences can be referred to as `'\\1'` or `r'\1'`.
+> 정규 표현식을 다룰 때에는 반드시 순수 문자열을 사용하세요. 순수 문자열을 사용하지 않을 경우 필요한 곳에 백슬래시를 일일이 넣어주어야 할 수도 있습니다. 예를 들어, 정규 표현식의 역참조는 `'\\1'` 또는 `r'\1'`와 같이 나타낼 수 있습니다.
 
-## 변수
+## 변수 (Variable)
 
-프로그램을 작성할 때는 리터럴 상수 대신에 어떤 값을 저장도 할 수 있고 변경도 할 수 있는 무언가가 필요할 때가 있는데, 이것을 _변수_ (variable)라고 합니다. Variables are exactly what the name implies - their value can vary, i.e., you can store anything using a variable. Variables are just parts of your computer's memory where you store some information. Unlike literal constants, you need some method of accessing these variables and hence you give them names.
+프로그램을 작성할 때는 리터럴 상수 대신에 어떤 값을 저장도 할 수 있고 변경도 할 수 있는 무언가가 필요할 때가 있는데, 이것을 _변수_ (variable)라고 합니다. 변수는 이름에서 알 수 있듯이 그 값이 변할 수 있으며, 변수에는 어떤 값이든 저장할 수 있습니다. 사실 변수는 여러가지 정보가 저장되는 컴퓨터의 메모리 공간의 일부인데, 리터럴 상수와 다른 점은 변수에 접근할 때에는 그 변수에 붙은 고유한 이름을 사용한다는 것입니다.
 
-## 식별자 규칙
+## 식별자 규칙 (Identifier Naming)
 
 Variables are examples of identifiers. _Identifiers_ are names given to identify _something_. There are some rules you have to follow for naming identifiers:
 
@@ -238,11 +239,11 @@ Variables are examples of identifiers. _Identifiers_ are names given to identify
 - Identifier names are case-sensitive. For example, `myname` and `myName` are _not_ the same. Note the lowercase `n` in the former and the uppercase `N` in the latter.
 - Examples of _valid_ identifier names are `i`, `name_2_3`. Examples of _invalid_ identifier names are `2things`, `this is spaced out`, `my-name` and `>a1b2_c3`.
 
-## 자료형
+## 자료형 (Data Types)
 
 변수는 _자료형_ (data types)이라고 부르는 여러 종류의 값을 가질 수 있습니다. The basic types are numbers and strings, which we have already discussed. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
 
-## 객체
+## 객체 (Object)
 
 Remember, Python refers to anything used in a program as an _object_.  This is meant in the generic sense. Instead of saying "the _something_"', we say "the _object_".
 
@@ -311,7 +312,7 @@ Similarly, we assign the literal string to the variable `s` and then print it.
 > 
 > Variables are used by just assigning them a value. No declaration or data type definition is needed/used.
 
-## 논리적 줄과 물리적 줄
+## 논리적 줄과 물리적 줄 (Logical And Physical Line)
 
 물리적 줄이란 프로그램을 짤 때 보이는 _말 그대로의 줄_을 의미하고, 논리적 줄이란 _파이썬 인터프리터가_ 처리하는 하나의 문장을 의미합니다. 
 파이썬은 각각의 _물리적 줄_이 _논리적 줄_과 같다는 가정, 즉 사람 눈에 보이는 한 줄이 파이썬에서의 한 문장과 같다는 가정 하에 프로그램을 처리합니다.
@@ -375,10 +376,13 @@ i = 5
 
 Sometimes, there is an implicit assumption where you don't need to use a backslash. This is the case where the logical line has a starting parentheses, starting square brackets or a starting curly braces but not an ending one. This is called *implicit line joining*. You can see this in action when we write programs using [list](./data_structures.md#lists) in later chapters.
 
-## 들여쓰기
+## 들여쓰기 (Indentation)
 
-파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 줄 앞에 적절한 수의 공백을 넣는 작업을 _들여쓰기_라고 합니다. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
-이것은 같은 블록에서 실행되는 _모든 문장이 똑같이 들여쓰기가 되어 있어야_ 한다는 것을 의미합니다. 들여쓰기를 제대로 하지 않으면 프로그램을 실행할 때 오류가 발생할 수 있습니다.
+파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 하나의 줄 앞에 적절한 수의 공백을 넣는 작업을 _들여쓰기_라고 합니다. 논리적 줄의 맨 앞의 공백 (스페이스와 탭)은 그 줄의 들여쓰기 단계를 결정하는 데에 사용되며, which in turn is used to determine the grouping of statements.
+
+This means that statements which go together must have the same indentation. Each such set of statements is called a block. We will see examples of how blocks are important in later chapters.
+
+코드를 작성할 때 들여쓰기를 제대로 하지 않으면 어떻게 되는지 한번 확인해봅시다.
 
 ```python
 i = 5
@@ -387,7 +391,7 @@ i = 5
 print('I repeat, the value is', i)
 ```
 
-위 코드를 실행하면, 다음과 같은 오류가 발생하는 것을 확인할 수 있습니다.
+프로그램을 실행하면 다음과 같은 오류가 발생하는 것을 확인할 수 있습니다.
 
 ```
   File "whitespace.py", line 3
