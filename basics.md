@@ -241,7 +241,7 @@ Variables are examples of identifiers. _Identifiers_ are names given to identify
 
 ## 자료형 {#data-types}
 
-변수는 여러 종류의 값을 가질 수 있는데, 이러한 값의 종류를 _자료형_ (data types)이라고 합니다. 위에서 배운 숫자와 문자열은 파이썬의 기본 자료형에 해당됩니다. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
+변수는 여러 종류의 값을 가질 수 있는데, 이러한 값의 종류를 _자료형_ (data types)이라고 합니다. 위에서 배운 숫자와 문자열은 파이썬의 기본 자료형에 해당됩니다. 또한 [클래스](./oop.md#class)라는 개념을 사용하면 새로운 자료형을 만들 수도 있는데, 이에 관한 내용은 나중에 다루도록 하겠습니다.
 
 ## 객체 {#object}
 
