@@ -312,7 +312,7 @@ Similarly, we assign the literal string to the variable `s` and then print it.
 > 
 > Variables are used by just assigning them a value. No declaration or data type definition is needed/used.
 
-## 논리적 줄과 물리적 줄 (Logical And Physical Line)
+## 논리적 줄과 물리적 줄 {#logical-and-physical-line}
 
 물리적 줄이란 프로그램을 짤 때 보이는 _말 그대로의 줄_을 의미하고, 논리적 줄이란 _파이썬 인터프리터가_ 처리하는 하나의 문장을 의미합니다. 
 파이썬은 각각의 _물리적 줄_이 _논리적 줄_과 같다는 가정, 즉 사람 눈에 보이는 한 줄이 파이썬에서의 한 문장과 같다는 가정 하에 프로그램을 처리합니다.
@@ -376,7 +376,7 @@ i = 5
 
 Sometimes, there is an implicit assumption where you don't need to use a backslash. This is the case where the logical line has a starting parentheses, starting square brackets or a starting curly braces but not an ending one. This is called *implicit line joining*. You can see this in action when we write programs using [list](./data_structures.md#lists) in later chapters.
 
-## 들여쓰기 (Indentation)
+## 들여쓰기 {#indentation}
 
 파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 각각의 줄 앞에 적절한 수의 공백을 넣는 작업을 _들여쓰기_라고 하는데, 논리적 줄의 맨 앞의 공백 (스페이스와 탭)은 그 줄의 들여쓰기 단계를 결정하는 데에 사용되고 어느 기능을 구성하는 문장인지도 결정합니다.
 
