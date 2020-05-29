@@ -16,7 +16,7 @@ https://epsimatt.gitbook.io/byte-of-python/​
 
 ## 독자 리뷰 {#who-reads-bop}
 
-이 책의 많은 리뷰 중 일부를 골라 여기에 적어 놓았습니다.
+이 책의 수많은 리뷰 중 일부를 골라 여기에 적어 놓았습니다.
 
 > This is the best beginner's tutorial I've ever seen! Thank you for your effort.
 > -- [Walt Michalik](mailto:wmich50@theramp.net)

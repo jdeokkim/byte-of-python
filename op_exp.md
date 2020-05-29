@@ -133,7 +133,7 @@ a *= 3
 
 Notice that `var = var operation expression` becomes `var operation= expression`.
 
-## 연산자의 우선순위 (Order of Evaluation)
+## 연산자의 우선순위 {#order-of-evaluation}
 
 If you had an expression such as `2 + 3 * 4`, is the addition done first or the multiplication? Our high school maths tells us that the multiplication should be done first. This means that the multiplication operator has higher precedence than the addition operator.
 
@@ -170,7 +170,7 @@ Operators with the _same precedence_ are listed in the same row in the above tab
 괄호를 사용하면서 얻게 되는 또다른 장점은 바로 괄호가 연산자의 우선순위를 바꾸게 해줄 수 있다는 것입니다. 
 For example, if you want addition to be evaluated before multiplication in an expression, then you can write something like `(2 + 3) * 4`.
 
-## 연산자의 결합 규칙 (Associativity)
+## 연산자의 결합 규칙 {#associativity}
 
 Operators are usually associated from left to right. This means that operators with the same precedence are evaluated in a left to right manner. For example, `2 + 3 + 4` is evaluated as `(2 + 3) + 4`.
 
