@@ -37,7 +37,7 @@ print('hello world')
 > - 상수는 정의한 다음에 그 값을 지정해주어야 합니다.
 > - 리터럴은 변수나 상수에 지정되거나 단독으로 쓰이는 값 그 자체를 말합니다.
 
-## 숫자 (Numbers)
+## 숫자 {#numbers}
 
 파이썬에서 숫자는 `2` 같은 정수형와 `3.23`나 `52.3E-4`같은 실수형으로 나눌 수 있습니다.
 
@@ -232,12 +232,11 @@ r"Newlines are indicated by \n"
 
 ## 식별자 규칙 {#identifier-naming}
 
-Variables are examples of identifiers. _Identifiers_ are names given to identify _something_. There are some rules you have to follow for naming identifiers:
+_식별자_는 _어떤 대상_을 다른 대상과 구별할 수 있도록 하는 이름인데, 변수의 이름이 바로 대표적인 식별자에 해당합니다. 식별자를 만들 때는 아래와 같은 규칙을 지켜야 합니다.
 
-- The first character of the identifier must be a letter of the alphabet (uppercase ASCII or lowercase ASCII or Unicode character) or an underscore (`_`).
-- The rest of the identifier name can consist of letters (uppercase ASCII or lowercase ASCII or Unicode character), underscores (`_`) or digits (0-9).
-- Identifier names are case-sensitive. For example, `myname` and `myName` are _not_ the same. Note the lowercase `n` in the former and the uppercase `N` in the latter.
-- Examples of _valid_ identifier names are `i`, `name_2_3`. Examples of _invalid_ identifier names are `2things`, `this is spaced out`, `my-name` and `>a1b2_c3`.
+- 식별자는 반드시 알파벳 대소문자 (ASCII 코드 대소문자 또는 유니코드 문자) 또는 밑줄 문자 (`_`)로 시작해야 하며, 식별자를 만들 때는 알파벳 대소문자, 숫자와 밑줄 문자를 사용해야 합니다.
+- 식별자 이름은 대소문자를 구분합니다. 예를 들어, 소문자 `n`이 들어간 `myname`과 대문자 `N`이 들어간 `myName`은 서로 다른 식별자로 취급됩니다.
+- 올바른 식별자의 예시로는 `i`와 `name_2_3`가 있으며, 올바르지 않은 식별자의 예시로는 `2things`, `this is spaced out`, `my-name`과 `>a1b2_c3`가 있습니다.
 
 ## 자료형 {#data-types}
 
