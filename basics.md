@@ -371,9 +371,9 @@ Sometimes, there is an implicit assumption where you don't need to use a backsla
 
 ## 들여쓰기 {#indentation}
 
-파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 각각의 줄 앞에 적절한 수의 공백을 넣는 작업을 _들여쓰기_라고 하는데, 논리적 줄의 맨 앞의 공백 (스페이스와 탭)은 그 줄의 들여쓰기 단계를 결정하는 데에 사용되고 어느 기능을 구성하는 문장인지도 결정합니다.
+파이썬에서 공백은 매우 중요한데, *줄 바로 앞에 있는 공백*은 특히 더 중요합니다. 각각의 줄 앞에 적절한 수의 공백을 넣는 작업을 _들여쓰기_라고 하는데, 논리적 줄의 맨 앞의 공백 (스페이스와 탭)은 그 줄의 들여쓰기 단계를 결정하는 데에 사용되고 어떤 묶음에 속하는 문장인지도 결정합니다.
 
-이것은 하나의 기능을 구성하는 모든 문장을 똑같이 들여써야 함을 의미하는데, 이렇게 기능 하나를 이루는 여러 문장의 묶음을 블록 (block)이라고 합니다. 이 책을 계속 읽다 보면 블록이 얼마나 중요한지를 알게 될 것입니다.
+이것은 같은 기능을 구성하는 모든 문장을 똑같이 들여써야 함을 의미하는데, 이렇게 똑같이 들여써진 문장들의 묶음을 블록 (block)이라고 합니다. 이 책을 계속 읽다 보면 블록이 얼마나 중요한지를 알게 될 것입니다.
 
 코드를 작성할 때 들여쓰기를 제대로 하지 않으면 어떻게 되는지 예제를 통해 직접 확인해봅시다.
 
@@ -393,7 +393,7 @@ print('I repeat, the value is', i)
 IndentationError: unexpected indent
 ```
 
-Notice that there is a single space at the beginning of the second line. The error indicated by Python tells us that the syntax of the program is invalid i.e. the program was not properly written. What this means to you is that _you cannot arbitrarily start new blocks of statements_ (except for the default main block which you have been using all along, of course). Cases where you can use new blocks will be detailed in later chapters such as the [control flow](./control_flow.md#control_flow).
+예제의 두 번째 줄 맨 앞에 있는 공백에 주목해봅시다. 파이썬이 출력한 오류 메시지를 확인해보면 이 프로그램의 문법이 잘못되었다는 것, 즉 예제 코드에 잘못 작성된 부분이 있다는 것을 알 수 있습니다. What this means to you is that _you cannot arbitrarily start new blocks of statements_ (except for the default main block which you have been using all along, of course). Cases where you can use new blocks will be detailed in later chapters such as the [control flow](./control_flow.md#control_flow).
 
 > **들여쓰기 팁**
 > 
