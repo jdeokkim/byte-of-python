@@ -8,7 +8,7 @@
 * [첫 번째 프로그램 만들기](first_steps.md)
 * [파이썬 기초 지식](basics.md)
 * [연산자와 수식](op_exp.md)
-* [프로그램 제어와 구조화](control_flow.md)
+* [제어 문장과 구조화](control_flow.md)
 * [함수](functions.md)
 * [모듈](modules.md)
 * [자료 구조란?](data_structures.md)
