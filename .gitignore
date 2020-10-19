@@ -1,0 +1,8 @@
+_book
+*.pyc
+.*.sw*
+byte_of_python.html
+byte_of_python.xml
+byte_of_python.pdf
+byte_of_python.epub
+byte_of_python.mobi

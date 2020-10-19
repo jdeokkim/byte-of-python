@@ -1,0 +1,12 @@
+2019-04-14
+
+argument: 인수
+constant: 상수
+data type: 자료형
+escape sequence: 제어 문자
+expression: 수식 
+indentation: 들여쓰기
+initialization: 초기화
+literal constant: 리터럴 상수
+parameter: 매개 변수
+statement: 문장
